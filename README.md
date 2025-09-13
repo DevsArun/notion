@@ -11,8 +11,8 @@
 
 *55+ premium templates to boost productivity, organize your workflow, and achieve more with less effort.*
 
-[![Get Bundle](https://img.shields.io/badge/Get%20Bundle-$10-success?style=for-the-badge&logo=notion)](https://your-link-here)
-[![Preview](https://img.shields.io/badge/Preview-Templates-blue?style=for-the-badge)](https://your-preview-link)
+[![Get Bundle](https://img.shields.io/badge/Get%20Bundle-$10-success?style=for-the-badge&logo=notion)](https://devsarun.github.io/notion/)
+[![Preview](https://img.shields.io/badge/Preview-Templates-blue?style=for-the-badge)](https://devsarun.github.io/notion/)
 
 **Rated 4.9/5 by 300+ users** ⭐
 
@@ -163,7 +163,7 @@ Join thousands of students, creators, and professionals who have already upgrade
 
 <div align="center">
 
-[![Get Bundle Now](https://img.shields.io/badge/Get%20All%2055%2B%20Templates-Only%20$10-success?style=for-the-badge&logo=notion)](https://your-purchase-link)
+[![Get Bundle Now](https://img.shields.io/badge/Get%20All%2055%2B%20Templates-Only%20$10-success?style=for-the-badge&logo=notion)](https://devsarun.github.io/notion/)
 
 **30-day money-back guarantee • Lifetime access & updates**
 
@@ -178,6 +178,6 @@ Join thousands of students, creators, and professionals who have already upgrade
 **NotionTemplateBundle** © 2025  
 Premium Notion templates for students, creators, freelancers, and businesses.
 
-[Terms](https://your-terms-link) • [Privacy](https://your-privacy-link) • [Contact](mailto:support@yourdomain.com)
+ • [Contact](mailto:itsdevsarun@gmail.com)
 
 </div>
