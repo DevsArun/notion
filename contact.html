@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Premium Template Bundle Support</title>
+    <meta name="description" content="Get help with your Premium Template Bundle. 24/7 support, instant downloads, and expert assistance.">
+    <meta name="keywords" content="template support, customer service, help, contact, premium templates">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://templatebundle.com/contact">
+    <meta property="og:title" content="Contact Us - Premium Template Bundle Support">
+    <meta property="og:description" content="Get instant help with your templates. Expert support team ready to assist you.">
+    <meta property="og:image" content="https://templatebundle.com/contact-og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📧</text></svg>">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.6); }
+        }
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+        .chat-bubble {
+            animation: float 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-900">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        📋 Template Bundle
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="index.html#categories" class="text-gray-600 hover:text-blue-600 transition-colors">Templates</a>
+                    <a href="index.html#features" class="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
+                    <a href="#" class="text-blue-600 font-semibold">Contact</a>
+                    <a href="index.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Buy Now - $10
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 float-animation">
+            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                <span class="text-2xl">💬</span>
+            </div>
+        </div>
+        <div class="absolute top-32 right-20 float-animation" style="animation-delay: 1s;">
+            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                <span class="text-xl">📧</span>
+            </div>
+        </div>
+        <div class="absolute bottom-20 left-1/4 float-animation" style="animation-delay: 2s;">
+            <div class="w-14 h-14 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                <span class="text-xl">🎧</span>
+            </div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center text-white">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                We're Here to
+                <span class="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+                    Help You
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto leading-relaxed">
+                Get instant support for your templates, downloads, or any questions. Our expert team is ready to help you succeed!
+            </p>
+            
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 border border-white border-opacity-20">
+                    <div class="text-3xl mb-2">⚡</div>
+                    <div class="text-2xl font-bold">< 1 Hour</div>
+                    <div class="text-gray-200">Average Response</div>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 border border-white border-opacity-20">
+                    <div class="text-3xl mb-2">🌟</div>
+                    <div class="text-2xl font-bold">4.9/5</div>
+                    <div class="text-gray-200">Support Rating</div>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 border border-white border-opacity-20">
+                    <div class="text-3xl mb-2">📞</div>
+                    <div class="text-2xl font-bold">24/7</div>
+                    <div class="text-gray-200">Available</div>
+                </div>
+            </div>
+
+            <button onclick="scrollToContact()" class="bg-white text-blue-600 text-xl font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 pulse-glow">
+                Get Help Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+                    Multiple Ways to Reach Us
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Choose the method that works best for you. We're committed to providing fast, helpful support.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Live Chat -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all p-8 text-center border-t-4 border-blue-500">
+                    <div class="chat-bubble text-5xl mb-4">💬</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Live Chat</h3>
+                    <p class="text-gray-600 mb-6">Instant help when you need it most. Chat with our support team in real-time.</p>
+                    <div class="text-green-600 font-semibold mb-4">🟢 Online Now</div>
+                    <button onclick="openLiveChat()" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-all">
+                        Start Chat
+                    </button>
+                </div>
+
+                <!-- Email Support -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all p-8 text-center border-t-4 border-green-500">
+                    <div class="text-5xl mb-4">📧</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Email Support</h3>
+                    <p class="text-gray-600 mb-6">Detailed help via email. Perfect for complex questions or technical issues.</p>
+                    <div class="text-blue-600 font-semibold mb-4">< 1 Hour Response</div>
+                    <a href="mailto:support@templatebundle.com" class="block w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg transition-all text-center">
+                        Send Email
+                    </a>
+                </div>
+
+                <!-- Phone Support -->
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all p-8 text-center border-t-4 border-purple-500">
+                    <div class="text-5xl mb-4">📞</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Phone Support</h3>
+                    <p class="text-gray-600 mb-6">Speak directly with our experts. Available 24/7 for urgent issues.</p>
+                    <div class="text-purple-600 font-semibold mb-4">+1 (555) 123-4567</div>
+                    <a href="tel:+15551234567" class="block w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-4 rounded-lg transition-all text-center">
+                        Call Now
+                    </a>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-form" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+                    Send Us a Message
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Fill out the form below and we'll get back to you within 1 hour during business hours.
+                </p>
+            </div>
+
+            <div class="bg-gray-50 rounded-3xl p-8 md:p-12">
+                <form id="contact-form" class="space-y-6">
+                    <!-- Contact Type Selection -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-3">What can we help you with?</label>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <label class="flex items-center p-4 bg-white rounded-lg border-2 border-gray-200 hover:border-blue-500 cursor-pointer transition-all">
+                                <input type="radio" name="inquiry_type" value="download_issue" class="sr-only">
+                                <div class="contact-type-option w-full text-center">
+                                    <div class="text-2xl mb-2">📥</div>
+                                    <div class="font-semibold text-sm">Download Issue</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 bg-white rounded-lg border-2 border-gray-200 hover:border-blue-500 cursor-pointer transition-all">
+                                <input type="radio" name="inquiry_type" value="template_help" class="sr-only">
+                                <div class="contact-type-option w-full text-center">
+                                    <div class="text-2xl mb-2">🛠️</div>
+                                    <div class="font-semibold text-sm">Template Help</div>
+                                </div>
+                            </label>
+                            <label class="flex items-center p-4 bg-white rounded-lg border-2 border-gray-200 hover:border-blue-500 cursor-pointer transition-all">
+                                <input type="radio" name="inquiry_type" value="billing" class="sr-only">
+                                <div class="contact-type-option w-full text-center">
+                                    <div class="text-2xl mb-2">💳</div>
+                                    <div class="font-semibold text-sm">Billing</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Personal Information -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="order_id" class="block text-sm font-semibold text-gray-700 mb-2">Order ID (if applicable)</label>
+                            <input type="text" id="order_id" name="order_id" placeholder="e.g., TB-2025-001234" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="priority" class="block text-sm font-semibold text-gray-700 mb-2">Priority Level</label>
+                            <select id="priority" name="priority" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="normal">Normal</option>
+                                <option value="high">High</option>
+                                <option value="urgent">Urgent</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div>
+                        <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Brief description of your issue" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Please provide as much detail as possible about your question or issue..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"></textarea>
+                    </div>
+
+                    <!-- File Upload -->
+                    <div>
+                        <label for="attachment" class="block text-sm font-semibold text-gray-700 mb-2">Attachment (optional)</label>
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-blue-500 transition-all">
+                            <input type="file" id="attachment" name="attachment" accept=".png,.jpg,.jpeg,.pdf,.doc,.docx" class="sr-only">
+                            <label for="attachment" class="cursor-pointer">
+                                <div class="text-3xl mb-2">📎</div>
+                                <div class="text-gray-600">Click to upload screenshot or file</div>
+                                <div class="text-sm text-gray-500 mt-1">PNG, JPG, PDF up to 10MB</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white text-lg font-bold py-4 px-12 rounded-full transition-all transform hover:scale-105 shadow-lg">
+                            Send Message
+                        </button>
+                        <div class="text-sm text-gray-500 mt-3">
+                            We'll respond within 1 hour during business hours
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Quick answers to common questions
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-white rounded-lg shadow-md" data-faq="1">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none flex justify-between items-center" onclick="toggleFAQ(1)">
+                        <span>How do I download my templates after purchase?</span>
+                        <span class="transition-transform duration-200" id="faq-icon-1">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-1">
+                        You'll receive an instant download link via email immediately after purchase. The link contains all 55+ templates and remains active forever. If you don't see the email, check your spam folder or contact us for immediate assistance.
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md" data-faq="2">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none flex justify-between items-center" onclick="toggleFAQ(2)">
+                        <span>I'm having trouble opening the templates. What should I do?</span>
+                        <span class="transition-transform duration-200" id="faq-icon-2">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-2">
+                        Our templates work with Notion, Google Sheets, Excel, and other platforms. Make sure you have the right software installed. If you're still having issues, contact our support team with your order ID and we'll help you get set up within minutes.
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md" data-faq="3">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none flex justify-between items-center" onclick="toggleFAQ(3)">
+                        <span>Can I get a refund if I'm not satisfied?</span>
+                        <span class="transition-transform duration-200" id="faq-icon-3">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-3">
+                        Absolutely! We offer a 30-day money-back guarantee. If you're not completely satisfied with your templates, just contact us and we'll process your full refund immediately, no questions asked.
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md" data-faq="4">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none flex justify-between items-center" onclick="toggleFAQ(4)">
+                        <span>Do you offer customization services?</span>
+                        <span class="transition-transform duration-200" id="faq-icon-4">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-4">
+                        Yes! While our templates are designed to be easily customizable by anyone, we also offer professional customization services starting at $25. Contact us with your specific requirements and we'll provide a custom quote.
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md" data-faq="5">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none flex justify-between items-center" onclick="toggleFAQ(5)">
+                        <span>How quickly do you respond to support requests?</span>
+                        <span class="transition-transform duration-200" id="faq-icon-5">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-5">
+                        We pride ourselves on fast support! During business hours (9 AM - 6 PM EST), we respond within 1 hour. Outside business hours, we respond within 24 hours. For urgent issues, use our live chat or phone support for immediate assistance.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Hours -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-800">Support Hours</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-200">
+                    <div class="text-4xl mb-4">🌅</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Business Hours</h3>
+                    <div class="space-y-2 text-gray-600">
+                        <div>Monday - Friday</div>
+                        <div class="font-semibold text-blue-600">9:00 AM - 6:00 PM EST</div>
+                        <div class="text-sm">< 1 Hour Response Time</div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-200">
+                    <div class="text-4xl mb-4">🌙</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">After Hours</h3>
+                    <div class="space-y-2 text-gray-600">
+                        <div>Weekends & Evenings</div>
+                        <div class="font-semibold text-purple-600">24/7 Available</div>
+                        <div class="text-sm">< 24 Hour Response Time</div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border border-red-200">
+                    <div class="text-4xl mb-4">🚨</div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Emergency</h3>
+                    <div class="space-y-2 text-gray-600">
+                        <div>Critical Issues Only</div>
+                        <div class="font-semibold text-red-600">Immediate Response</div>
+                        <div class="text-sm">Call: +1 (555) 123-4567</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Still Have Questions?
+            </h2>
+            <p class="text-xl mb-8 text-gray-100">
+                Don't hesitate to reach out. Our support team is here to ensure your success with our templates.
+            </p>
+            
+            <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:items-center md:justify-center">
+                <button onclick="openLiveChat()" class="w-full md:w-auto bg-white text-blue-600 text-xl font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105">
+                    Start Live Chat
+                </button>
+                <a href="index.html" class="block w-full md:w-auto bg-blue-500 hover:bg-blue-600 text-white text-xl font-semibold py-4 px-8 rounded-full border-2 border-blue-500 transition-all">
+                    Back to Templates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Template Bundle</h3>
+                    <p class="text-gray-400">Premium productivity templates to transform your life and work.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html#categories" class="hover:text-white transition-colors">Templates</a></li>
+                        <li><a href="index.html#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Support</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="mailto:support@templatebundle.com" class="hover:text-white transition-colors">Email Support</a></li>
+                        <li><a href="tel:+15551234567" class="hover:text-white transition-colors">Phone Support</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Live Chat</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Refund Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Template Bundle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget (Placeholder) -->
+    <div id="live-chat-widget" class="fixed bottom-6 right-6 z-50 hidden">
+        <div class="bg-white rounded-2xl shadow-2xl w-80 h-96 border border-gray-200">
+            <div class="bg-blue-600 text-white p-4 rounded-t-2xl flex justify-between items-center">
+                <div>
+                    <div class="font-bold">Live Support</div>
+                    <div class="text-sm text-blue-100">We're online now!</div>
+                </div>
+                <button onclick="closeLiveChat()" class="text-white hover:text-gray-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="p-4 h-64 overflow-y-auto bg-gray-50">
+                <div class="text-sm text-gray-600 text-center mb-4">
+                    Chat with our support team
+                </div>
+                <!-- Chat messages would go here -->
+            </div>
+            <div class="p-4 border-t">
+                <div class="flex space-x-2">
+                    <input type="text" placeholder="Type your message..." class="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Button -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <button onclick="openLiveChat()" class="bg-blue-600 hover:bg-blue-700 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110 pulse-glow">
+            <span class="text-2xl">💬</span>
+        </button>
+    </div>
+
+    <script>
+        // FAQ Toggle Function
+        function toggleFAQ(number) {
+            const content = document.getElementById(`faq-content-${number}`);
+            const icon = document.getElementById(`faq-icon-${number}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.textContent = '−';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.textContent = '+';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Live Chat Functions
+        function openLiveChat() {
+            document.getElementById('live-chat-widget').classList.remove('hidden');
+        }
+
+        function closeLiveChat() {
+            document.getElementById('live-chat-widget').classList.add('hidden');
+        }
+
+        // Contact Type Selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const radioInputs = document.querySelectorAll('input[name="inquiry_type"]');
+            radioInputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    // Remove selected class from all options
+                    document.querySelectorAll('.contact-type-option').forEach(option => {
+                        option.closest('label').classList.remove('border-blue-500', 'bg-blue-50');
+                    });
+                    
+                    // Add selected class to chosen option
+                    if (this.checked) {
+                        this.closest('label').classList.add('border-blue-500', 'bg-blue-50');
+                    }
+                });
+            });
+
+            // Form submission
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show success message
+                alert('Thank you for your message! We\'ll respond within 1 hour during business hours.');
+                
+                // Reset form
+                this.reset();
+                
+                // Remove selected styling from contact type options
+                document.querySelectorAll('.contact-type-option').forEach(option => {
+                    option.closest('label').classList.remove('border-blue-500', 'bg-blue-50');
+                });
+            });
+        });
+
+        // Scroll to contact form
+        function scrollToContact() {
+            document.getElementById('contact-form').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Help Center Function
+        function openHelpCenter() {
+            // This would typically open a help center in a new tab/window
+            alert('Help Center would open here with tutorials and guides!');
+        }
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            // Mobile menu functionality would go here
+            alert('Mobile menu would toggle here!');
+        });
+    </script>
+</body>
+</html>
