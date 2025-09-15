@@ -2177,6 +2177,33 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
     </section>
+<script>
+  function toggleFAQ(id) {
+    const content = document.getElementById(`faq-content-${id}`);
+    const icon = document.getElementById(`faq-icon-${id}`);
+
+    // sabhi FAQ ko close karne ke liye
+    document.querySelectorAll(".faq-content").forEach(el => {
+      if (el.id !== `faq-content-${id}`) {
+        el.classList.add("hidden");
+      }
+    });
+    document.querySelectorAll("[id^='faq-icon-']").forEach(el => {
+      if (el.id !== `faq-icon-${id}`) {
+        el.textContent = "+";
+      }
+    });
+
+    // clicked wale ko toggle karo
+    if (content.classList.contains("hidden")) {
+      content.classList.remove("hidden");
+      icon.textContent = "-";
+    } else {
+      content.classList.add("hidden");
+      icon.textContent = "+";
+    }
+  }
+</script>
 
     <!-- Final CTA Section -->
     <section class="py-20 gradient-bg text-white text-center">
