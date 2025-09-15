@@ -3,870 +3,1676 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get 55+ premium Notion templates for just $10. Perfect for students, creators & freelancers. Save time and boost productivity.">
+    <title>Premium Template Bundle - 55+ Professional Notion Templates for $10</title>
+    <meta name="description" content="Get 55+ premium Notion templates for productivity, business, health & more. Valued at $200+, now just $10. 30-day money-back guarantee.">
+    <meta name="keywords" content="Notion templates, productivity Notion templates, business Notion templates, notion Notion templates, premium bundle">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/">
-    <meta property="og:title" content="55+ Premium Notion Templates Bundle - Only $10">
-    <meta property="og:description" content="Get 55+ premium Notion templates for students, creators & freelancers. Save time and boost productivity.">
-    <meta property="og:image" content="/assets/social-preview.jpg">
-    
+    <meta property="og:url" content="https://templatebundle.com/">
+    <meta property="og:title" content="Premium Template Bundle - 55+ Notion Templates for $10">
+    <meta property="og:description" content="Transform your productivity with 55+ premium Notion templates. Valued at $200+, now just $10.">
+    <meta property="og:image" content="https://templatebundle.com/og-image.jpg">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourdomain.com/">
-    <meta property="twitter:title" content="55+ Premium Notion Templates Bundle - Only $10">
-    <meta property="twitter:description" content="Get 55+ premium Notion templates for students, creators & freelancers. Save time and boost productivity.">
-    <meta property="twitter:image" content="/assets/social-preview.jpg">
+    <meta property="twitter:url" content="https://templatebundle.com/">
+    <meta property="twitter:title" content="Premium Template Bundle - 55+ Notion Templates for $10">
+    <meta property="twitter:description" content="Transform your productivity with 55+ premium Notion templates. Valued at $200+, now just $10.">
+    <meta property="twitter:image" content="https://templatebundle.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
     
-    <title>55+ Premium Notion Templates Bundle - Only $10</title>
-    
-    <!-- Tailwind CSS -->
+    <!-- TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        teal: {
-                            500: '#0ea5a4',
-                            600: '#0d9488',
-                            700: '#0f766e'
-                        }
-                    },
-                    animation: {
-                        'fade-in': 'fadeIn 0.5s ease-out forwards',
-                        'slide-up': 'slideUp 0.7s ease-out forwards',
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        },
-                        slideUp: {
-                            '0%': { transform: 'translateY(20px)', opacity: '0' },
-                            '100%': { transform: 'translateY(0)', opacity: '1' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     
-    <!-- Alpine.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    
-    <!-- Schema.org JSON-LD -->
+    <!-- JSON-LD Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org/",
         "@type": "Product",
-        "name": "55+ Premium Notion Templates Bundle",
-        "description": "A comprehensive bundle of 55+ premium Notion templates for students, creators, freelancers, and businesses.",
+        "name": "Premium Template Bundle",
+        "description": "55+ premium Notion templates for productivity, business, health and more",
+        "image": "https://templatebundle.com/product-image.jpg",
         "offers": {
             "@type": "Offer",
-            "price": "10.00",
+            "url": "https://templatebundle.com/",
             "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "priceValidUntil": "2025-12-31"
+            "price": "10.00",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock"
         },
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
-            "reviewCount": "327"
+            "reviewCount": "300"
         }
     }
     </script>
-    
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
-        
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease-out forwards;
-            opacity: 0;
+        .hero-bg {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%);
         }
-        
-        .animate-slide-up {
-            animation: slideUp 0.8s ease-out forwards;
-            opacity: 0;
+        .progress-bar {
+            transition: width 0.3s ease-in-out;
         }
-        
-        .delay-100 {
-            animation-delay: 0.1s;
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(239, 68, 68, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(239, 68, 68, 0.6); }
         }
-        
-        .delay-200 {
-            animation-delay: 0.2s;
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
         }
-        
-        .delay-300 {
-            animation-delay: 0.3s;
-        }
-        
-        .card-shadow {
-            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .premium-shadow {
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1), 0 10px 30px -10px rgba(14, 165, 164, 0.15);
-        }
-        
-        /* Carousel transitions */
-        .carousel-transition {
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-        
-        /* Lightbox styling */
-        .lightbox {
-            transition: opacity 0.3s ease;
-        }
-        
-        .lightbox-img {
-            transform: scale(0.8);
-            transition: transform 0.3s ease;
-        }
-        
-        .lightbox.active .lightbox-img {
-            transform: scale(1);
+        .modal-backdrop {
+            backdrop-filter: blur(8px);
         }
     </style>
-    
-    <!-- Google Analytics Placeholder -->
-    <!--
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-    -->
-    
-    <!-- Facebook Pixel Placeholder -->
-    <!--
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', 'FB_PIXEL_ID');
-        fbq('track', 'PageView');
-    </script>
-    -->
 </head>
-<body class="bg-white text-gray-800">
-    <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold text-teal-600">NotionTemplateBundle</div>
-            <nav>
-                <ul class="flex space-x-8">
-                    <li><a href="#templates" class="hover:text-teal-600 transition-colors">Templates</a></li>
-                    <li><a href="#features" class="hover:text-teal-600 transition-colors">Features</a></li>
-                    <li><a href="#testimonials" class="hover:text-teal-600 transition-colors">Reviews</a></li>
-                    <li><a href="#faq" class="hover:text-teal-600 transition-colors">FAQ</a></li>
-                </ul>
-            </nav>
-            <a href="#pricing" class="bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 px-5 rounded-lg transition-colors">Get Bundle</a>
-        </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="py-16 md:py-24 bg-gradient-to-br from-white to-teal-50">
-            <div class="container mx-auto px-4 text-center">
-                <div class="max-w-3xl mx-auto">
-                    <div class="inline-flex items-center bg-teal-100 text-teal-800 rounded-full px-4 py-1 mb-6 text-sm font-medium animate-slide-up">
-                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                        Rated 4.9/5 by 300+ users
-                    </div>
-                    
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">Organize Your Life & Work With Notion</h1>
-                    <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto animate-fade-in delay-100">55+ premium templates to boost productivity, organize your workflow, and achieve more with less effort.</p>
-                    
-                    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12 animate-fade-in delay-200">
-                        <a href="https://rzp.io/rzp/08Wr24g" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-transform">Get the 55+ Notion Bundle — $10</a>
-                        <a href="#screenshots" class="border border-teal-600 text-teal-600 hover:bg-teal-50 font-medium py-4 px-8 rounded-lg text-lg transition-colors">Preview Templates</a>
-                    </div>
-                    
-                    <div class="animate-fade-in delay-300">
-                        <p class="text-2xl font-bold mb-2">Only $10 <span class="text-gray-500 line-through text-lg font-normal">(Value $200+)</span></p>
-                        <p class="text-gray-600 mb-6">Duplicate to your Notion workspace in 2 clicks — no setup needed</p>
-                        
-                        <div class="flex flex-wrap justify-center items-center gap-6 text-gray-500 text-sm">
-                            <div class="flex items-center">
-                                <svg class="w-5 h-5 text-teal-600 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
-                                Used by 2,500+ students, creators & freelancers
-                            </div>
-                            <div class="flex items-center">
-                                <svg class="w-5 h-5 text-teal-600 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.2 6.5 10.266a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path></svg>
-                                Instant access & lifetime updates
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!-- Screenshot Carousel -->
-<section id="screenshots" class="py-16 bg-white" 
-    x-data="{ 
-        activeSlide: 0, 
-        slides: [
-            { src: '1.png', alt: 'Notion template screenshot 1' },
-            { src: '2.png', alt: 'Notion template screenshot 2' },
-            { src: '3.jpg', alt: 'Notion template screenshot 3' },
-            { src: '4.png', alt: 'Notion template screenshot 4' },
-            { src: '5.png', alt: 'Notion template screenshot 5' },
-            { src: '6.png', alt: 'Notion template screenshot 6' },
-            { src: '7.webp', alt: 'Notion template screenshot 7' }
-        ], 
-        autoplay: true 
-    }" 
-    x-init="if(autoplay) { setInterval(() => { activeSlide = (activeSlide + 1) % slides.length }, 5000) }">
+<body class="font-sans text-gray-900 overflow-x-hidden">
     
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">See Our Templates In Action</h2>
+  <!-- Enhanced Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0">
+        <!-- Gradient Overlays -->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/30 via-purple-600/30 to-pink-600/30"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
         
-        <div class="relative max-w-5xl mx-auto">
-            <!-- Carousel -->
-            <div class="overflow-hidden rounded-2xl premium-shadow">
-                <div class="relative h-0 pb-[62.5%]" style="background: #f8fafb">
-                    
-                    <!-- Slides -->
-                    <template x-for="(slide, i) in slides" :key="i">
-                        <div x-show="activeSlide === i" x-transition
-                            class="absolute top-0 left-0 w-full h-full">
-                            <img :src="slide.src" :alt="slide.alt"
-                                class="w-full h-full object-cover cursor-pointer" 
-                                @click="$dispatch('open-lightbox', { index: i })" loading="lazy">
-                        </div>
-                    </template>
-                </div>
-            </div>
-            
-            <!-- Navigation buttons -->
-            <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-md transition-colors" 
-                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1" aria-label="Previous slide">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-            </button>
-            <button class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-md transition-colors" 
-                @click="activeSlide = (activeSlide + 1) % slides.length" aria-label="Next slide">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            </button>
-            
-            <!-- Dots -->
-            <div class="flex justify-center mt-6 space-x-2">
-                <template x-for="(slide, i) in slides" :key="i">
-                    <button class="w-3 h-3 rounded-full transition-colors" 
-                        :class="{ 'bg-teal-600': activeSlide === i, 'bg-gray-300': activeSlide !== i }" 
-                        @click="activeSlide = i" :aria-label="`Go to slide ${i+1}`"></button>
-                </template>
-            </div>
+        <!-- Floating Particles -->
+        <div class="absolute inset-0">
+            <div class="floating-particle absolute top-20 left-10 w-4 h-4 bg-yellow-300 rounded-full opacity-70 animate-bounce" style="animation-delay: 0s;"></div>
+            <div class="floating-particle absolute top-40 right-20 w-3 h-3 bg-pink-300 rounded-full opacity-60 animate-bounce" style="animation-delay: 0.5s;"></div>
+            <div class="floating-particle absolute bottom-32 left-1/4 w-5 h-5 bg-blue-300 rounded-full opacity-50 animate-bounce" style="animation-delay: 1s;"></div>
+            <div class="floating-particle absolute top-60 right-1/3 w-2 h-2 bg-green-300 rounded-full opacity-80 animate-bounce" style="animation-delay: 1.5s;"></div>
+            <div class="floating-particle absolute bottom-20 right-10 w-6 h-6 bg-purple-300 rounded-full opacity-60 animate-bounce" style="animation-delay: 2s;"></div>
+        </div>
+
+        <!-- Geometric Patterns -->
+        <div class="absolute top-10 left-10 transform rotate-45">
+            <div class="w-32 h-32 border-2 border-white/10 rounded-lg animate-spin-slow"></div>
+        </div>
+        <div class="absolute bottom-20 right-20 transform -rotate-12">
+            <div class="w-24 h-24 border-2 border-yellow-300/20 rounded-full animate-pulse"></div>
+        </div>
+        <div class="absolute top-1/3 right-10 transform rotate-12">
+            <div class="w-20 h-20 border-2 border-pink-300/20 rounded-lg animate-spin-slow"></div>
         </div>
     </div>
-    
-    <!-- Lightbox Modal -->
-    <div x-data="{ lightboxOpen: false, currentIndex: 0 }" 
-        @open-lightbox.window="lightboxOpen = true; currentIndex = $event.detail.index" 
-        x-show="lightboxOpen" class="fixed inset-0 z-50 lightbox" 
-        :class="{ 'active': lightboxOpen }" style="display: none; background: rgba(0,0,0,0.9)" 
-        @keydown.escape="lightboxOpen = false">
-        
-        <div class="absolute inset-0 flex items-center justify-center p-4">
-            <button class="absolute top-4 right-4 text-white hover:text-teal-400 z-10" 
-                @click="lightboxOpen = false" aria-label="Close lightbox">
-                <svg class="w-10 h-10" fill="none" stroke="currentColor" 
-                    viewBox="0 0 24 24"><path stroke-linecap="round" 
-                    stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            
-            <button class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-teal-400 z-10" 
-                @click="currentIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1" aria-label="Previous image">
-                <svg class="w-10 h-10" fill="none" stroke="currentColor" 
-                    viewBox="0 0 24 24"><path stroke-linecap="round" 
-                    stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-            </button>
-            
-            <div class="relative max-w-5xl w-full h-full flex items-center justify-center">
-                <!-- Lightbox Image -->
-                <img :src="slides[currentIndex].src" :alt="slides[currentIndex].alt" 
-                    class="lightbox-img max-h-full max-w-full object-contain">
-            </div>
-            
-            <button class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-teal-400 z-10" 
-                @click="currentIndex = (currentIndex + 1) % slides.length" aria-label="Next image">
-                <svg class="w-10 h-10" fill="none" stroke="currentColor" 
-                    viewBox="0 0 24 24"><path stroke-linecap="round" 
-                    stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            </button>
+
+    <!-- Main Hero Content -->
+    <div class="relative z-10 max-w-5xl mx-auto text-center text-white">
+        <!-- Attention Grabber Badge -->
+        <div class="inline-flex items-center bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-2 rounded-full text-sm font-bold mb-8 animate-pulse shadow-2xl">
+            <span class="mr-2">🚀</span>
+            <span>FLASH SALE: 95% OFF - Limited Time Only!</span>
+            <span class="ml-2">🔥</span>
         </div>
-    </div>
-</section>
 
+        <!-- Main Headline with Enhanced Typography -->
+        <h1 class="text-6xl md:text-8xl font-black mb-8 leading-none">
+            <span class="block text-white drop-shadow-2xl">Transform Your</span>
+            <span class="block bg-gradient-to-r from-yellow-300 via-pink-300 to-cyan-300 bg-clip-text text-transparent animate-gradient-x text-7xl md:text-9xl">
+                Life Today
+            </span>
+        </h1>
 
-        <!-- Value Proposition -->
-        <section id="features" class="py-16 bg-teal-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-16">Everything You Need To Succeed With Notion</h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white p-6 rounded-xl card-shadow text-center">
-                        <div class="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-7 h-7 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Built From Scratch</h3>
-                        <p class="text-gray-600">Professionally designed templates with clean aesthetics and intuitive layouts.</p>
-                    </div>
-                    
-                    <div class="bg-white p-6 rounded-xl card-shadow text-center">
-                        <div class="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-7 h-7 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Plug & Play</h3>
-                        <p class="text-gray-600">Duplicate to your workspace in 2 clicks. No setup or learning curve needed.</p>
-                        <p class="text-sm text-teal-600 font-medium mt-3">Open link → Duplicate to your workspace</p>
-                    </div>
-                    
-                    <div class="bg-white p-6 rounded-xl card-shadow text-center">
-                        <div class="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-7 h-7 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">For Everyone</h3>
-                        <p class="text-gray-600">Perfect for students, creators, freelancers, and businesses of all sizes.</p>
-                    </div>
-                    
-                    <div class="bg-white p-6 rounded-xl card-shadow text-center">
-                        <div class="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-7 h-7 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Lifetime Access</h3>
-                        <p class="text-gray-600">One-time purchase with lifetime updates. Use offline, forever.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Power Statement -->
+        <div class="text-2xl md:text-4xl font-bold mb-6 text-yellow-300 drop-shadow-lg">
+            55+ Premium Notion Templates • $200+ Value • Just $10
+        </div>
 
-       <!-- Template Index -->
-<section id="templates" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-6">55+ Premium Templates Included</h2>
-        <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            Our complete bundle includes templates for every aspect of your life and work. Find exactly what you need.
+        <!-- Subheadline -->
+        <p class="text-lg md:text-xl mb-12 text-gray-100 max-w-4xl mx-auto leading-relaxed font-medium">
+            Join thousands of successful people who've transformed their productivity with our premium template collection. 
+            <span class="text-yellow-300 font-semibold">Get organized, achieve goals, and unlock your potential!</span>
         </p>
 
-        <!-- Template Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 max-w-4xl mx-auto">
+        <!-- Social Proof with Enhanced Design -->
+        <div class="flex flex-col md:flex-row items-center justify-center mb-12 space-y-4 md:space-y-0 md:space-x-8">
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl px-6 py-4 border border-white/20">
+                <div class="flex items-center">
+                    <span class="text-3xl mr-3">⭐⭐⭐⭐⭐</span>
+                    <div>
+                        <div class="text-2xl font-bold text-yellow-300">4.9/5</div>
+                        <div class="text-sm text-gray-300">Rating</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl px-6 py-4 border border-white/20">
+                <div class="flex items-center">
+                    <span class="text-3xl mr-3">👥</span>
+                    <div>
+                        <div class="text-2xl font-bold text-green-300">300+</div>
+                        <div class="text-sm text-gray-300">Happy Users</div>
+                    </div>
+                </div>
+            </div>
 
-            <!-- Templates -->
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Networking CRM – Networking CRM</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Inventory Tracker – Inventory Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pet Care Planner – Pet Care Planner</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Focus Room – Focus Room</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Student Schedule – Student Schedule</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Wishlist Tracker – Wishlist Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Eisenhower Matrix – Eisenhower Matrix</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Weight Tracker – Weight Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Second Brain Aesthetic / Minimal Theme – PARA Second Brain</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Freelance OS | Achieve More with Less Effort – Freelance Dashboard</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>PARA Dashboard | Master Your Workflow From Tiago Forte – PARA 1.0</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Workout Tracker – Workout</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Personal Portfolio / Interactive Resume – Personal Portfolio / Interactive Resume</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Subscription Tracker – Subscription Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Getting Things Done (GTD) Dashboard – Get Sh*t Done GTD</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Invoice Manager – Invoice Manager</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Book Tracker – Book Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Essential Life Planner – Essential Life Planner</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Note-taking System – Note-taking System</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Sticky Notes Dashboard – Sticky Notes Dashboard</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Business CRM – Minimalist Business CRM</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Notion Travel Planner – Travel Planner</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Project and Task Manager – Basic Task Manager</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Time Blocking Calendar – Time Blocking Calendar</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Content Planner OS – Content Planner</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Notion Daily Routine – Daily Routine</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Notion Finance Tracker – Finance Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Notion Daily Journal – Journal</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>OKR Goal Tracker – OKR Goal Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Notion Fitness Planner – Fitness Planner</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Notion Finance Tracker (Old) – Finance Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Notion Second Brain – Basic Second Brain</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Project & Task Manager – Progress Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Notion Productivity Planners – Productivity Planners</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Finance OS Dashboard – Basic Finance Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Home OS – Home OS</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Daily Journal – Daily Journal</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Freelance System – Minimalist Freelance OS</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Goals Tracker – Goals Tracker</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Ultimate Life OS – LifeOS Dashboard</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Library OS – Library OS</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Projects Management System – Minimalist Project Manager</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Movies & Series Diary Notion Template – Movies & Series Diary</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Fitness OS – Fitness OS</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Getting Things Done (GTD) – Free GTD System</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Second Brain Template – Simple Second Brain</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Travel Planner – Travel Planner</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Finance OS – Finance OS</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Habit Tracker – Habits Tracker Template</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Work/Project Manager – Work/Project Manager</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Notion Resources – Notion Resources</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Book Tracker Notion Template – Book Tracker Notion Template</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>12 Week Year Planner Notion Template – 12 Week Year Planner</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>100 Days of Code Journal – 100 Days of Code Journal</div>
-            <div class="bg-white p-4 rounded-lg border border-gray-100 card-shadow flex items-start"><svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Notion Professional Resume Template – Notion Professional Resume Template</div>
-
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl px-6 py-4 border border-white/20">
+                <div class="flex items-center">
+                    <span class="text-3xl mr-3">⚡</span>
+                    <div>
+                        <div class="text-2xl font-bold text-cyan-300">Instant</div>
+                        <div class="text-sm text-gray-300">Download</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- CTA -->
-        <div class="text-center">
-            <a href="https://rzp.io/rzp/08Wr24g" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg text-lg inline-block transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-transform">
-                Get All 55+ Templates Now
-            </a>
-            <p class="text-gray-500 text-sm mt-4">Limited-time launch price — only $10 for the full bundle</p>
+        <!-- Enhanced Pricing Display -->
+        <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 mb-12 max-w-2xl mx-auto border border-white/20 shadow-2xl">
+            <div class="text-center mb-6">
+                <div class="text-gray-300 text-lg mb-2">Regular Price:</div>
+                <div class="text-gray-400 text-3xl line-through mb-4">$200+</div>
+                
+                <div class="text-yellow-300 text-lg mb-2">🔥 Flash Sale Price:</div>
+                <div class="text-6xl md:text-7xl font-black text-white mb-4 drop-shadow-2xl">
+                    $10
+                </div>
+                
+                <div class="bg-gradient-to-r from-green-400 to-emerald-500 text-black px-4 py-2 rounded-full inline-block font-bold text-lg">
+                    Save $190+ (95% OFF!)
+                </div>
+            </div>
+        </div>
+
+        <!-- Enhanced CTAs -->
+        <div class="space-y-6 mb-12">
+            <!-- Primary CTA -->
+            <button id="primary-cta" class="group relative inline-flex items-center justify-center w-full md:w-auto bg-gradient-to-r from-red-500 via-pink-500 to-red-600 hover:from-red-600 hover:via-pink-600 hover:to-red-700 text-white text-2xl font-black py-6 px-12 rounded-2xl transition-all duration-300 transform hover:scale-110 shadow-2xl hover:shadow-red-500/50" onclick="openCheckoutModal()">
+                <span class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 translate-x-full group-hover:translate-x-0 transition-transform duration-700"></span>
+                <span class="relative flex items-center">
+                    <span class="text-3xl mr-3 animate-bounce">🔥</span>
+                    <span>GET ALL 55+ Notion TEMPLATES - $10</span>
+                    <span class="text-3xl ml-3 animate-bounce">🚀</span>
+                </span>
+            </button>
+
+            <!-- Secondary CTA -->
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <button class="bg-white/20 hover:bg-white/30 backdrop-blur-lg text-white text-xl font-bold py-4 px-8 rounded-2xl border-2 border-white/30 transition-all duration-300 transform hover:scale-105 shadow-lg" onclick="scrollToSection('categories')">
+                    <span class="mr-2">📂</span>
+                    Browse Categories
+                </button>
+                
+                <button class="text-cyan-300 hover:text-cyan-200 text-xl font-semibold underline transition-colors" onclick="scrollToSection('preview')">
+                    <span class="mr-2">👀</span>
+                    View Template Previews
+                </button>
+            </div>
+        </div>
+
+        <!-- Enhanced Guarantees -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-green-400/30 shadow-lg">
+                <div class="text-3xl mb-2">🛡️</div>
+                <div class="text-green-300 font-bold text-lg">30-Day Guarantee</div>
+                <div class="text-gray-300 text-sm">100% Money Back</div>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-blue-400/30 shadow-lg">
+                <div class="text-3xl mb-2">⚡</div>
+                <div class="text-blue-300 font-bold text-lg">Instant Access</div>
+                <div class="text-gray-300 text-sm">Download Immediately</div>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-purple-400/30 shadow-lg">
+                <div class="text-3xl mb-2">🔄</div>
+                <div class="text-purple-300 font-bold text-lg">Lifetime Updates</div>
+                <div class="text-gray-300 text-sm">Forever Free</div>
+            </div>
+        </div>
+
+        <!-- Urgency Indicators -->
+        <div class="mt-12 space-y-4">
+            <div class="bg-red-500/20 backdrop-blur-lg rounded-2xl p-4 border border-red-400/30">
+                <div class="flex items-center justify-center text-red-200">
+                    <span class="text-2xl mr-3 animate-pulse">⏰</span>
+                    <span class="font-bold text-lg">
+                        Flash Sale Ends in: <span id="hero-countdown" class="font-mono text-yellow-300">23:59:42</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+            <div class="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+        </div>
+        <div class="text-white text-sm mt-2 text-center">Scroll Down</div>
+    </div>
+</section>
+
+<!-- Enhanced Urgency Bar -->
+<div class="bg-gradient-to-r from-red-500 to-pink-500 border-b-2 border-red-400 py-4 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer"></div>
+    <div class="max-w-6xl mx-auto relative z-10">
+        <div class="flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0">
+            <div class="text-white font-bold text-lg flex items-center">
+                <span class="text-2xl mr-2 animate-pulse">🔥</span>
+                <span>BREAKING: <span id="sold-count" class="text-yellow-300">847</span> people bought this today!</span>
+            </div>
+            <div class="text-white font-bold text-lg flex items-center">
+                <span class="text-2xl mr-2 animate-pulse">⏰</span>
+                <span>Sale ends in: <span id="countdown" class="font-mono text-yellow-300 bg-black/20 px-2 py-1 rounded">23:59:42</span></span>
+            </div>
+        </div>
+        <div class="mt-3 bg-red-300/30 rounded-full h-4 overflow-hidden">
+            <div id="progress-bar" class="bg-gradient-to-r from-yellow-400 to-orange-400 h-4 rounded-full progress-bar shadow-lg" style="width: 84.7%">
+                <div class="h-full bg-gradient-to-r from-white/30 to-transparent rounded-full"></div>
+            </div>
+        </div>
+        <div class="text-yellow-200 font-semibold mt-2 text-center">
+            ⚡ Only 153 bundles left at this incredible price! ⚡
         </div>
     </div>
 </section>
 
+<style>
+/* Enhanced Animations and Effects */
+@keyframes gradient-x {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
 
-        <!-- Pricing & Scarcity -->
-        <section id="pricing" class="py-16 bg-gradient-to-br from-teal-600 to-teal-700 text-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold mb-6">Get The Complete Notion Bundle Today</h2>
-                <p class="text-teal-100 text-xl max-w-2xl mx-auto mb-10">Everything you need to organize your life and work, all in one place.</p>
-                
-                <div class="max-w-lg mx-auto bg-white text-gray-800 rounded-2xl overflow-hidden premium-shadow">
-                    <div class="p-8">
-                        <div class="flex justify-center items-baseline mb-6">
-                            <span class="text-5xl font-bold">$10</span>
-                            <span class="text-xl text-gray-500 ml-2 line-through">$200+ value</span>
-                        </div>
-                        
-                        <ul class="text-left space-y-3 mb-8">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>55+ premium Notion templates</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Lifetime access & free updates</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Duplicate in 2 clicks — no setup needed</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-teal-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Works on desktop & mobile</span>
-                            </li>
-                        </ul>
-                        
-                        <div class="mb-6">
-                            <div class="flex justify-between text-sm text-gray-600 mb-2">
-                                <span>Limited offer: 72/100 sold</span>
-                                <span>83% claimed</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                <div class="bg-teal-600 h-2.5 rounded-full" style="width: 83%"></div>
-                            </div>
-                        </div>
-                        
-                       <!-- Offer Countdown -->
-<div 
-    x-data="countdownTimer(48 * 60 * 60)" 
-    x-init="start()" 
-    class="bg-amber-100 text-amber-800 p-3 rounded-lg mb-6 flex items-center justify-center"
->
-    <svg class="w-5 h-5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-        <path fill-rule="evenodd" 
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" 
-              clip-rule="evenodd"></path>
-    </svg>
-    <span>
-        Offer expires in: 
-        <span class="font-bold" x-text="time"></span>
-    </span>
-</div>
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.animate-gradient-x {
+    background-size: 400% 400%;
+    animation: gradient-x 3s ease infinite;
+}
+
+.animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+}
+
+.animate-shimmer {
+    animation: shimmer 2s ease-in-out infinite;
+}
+
+.floating-particle {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Enhanced Glassmorphism Effects */
+.backdrop-blur-xl {
+    backdrop-filter: blur(16px);
+}
+
+/* Enhanced Button Effects */
+.group:hover .group-hover\:translate-x-0 {
+    transform: translateX(0);
+}
+
+/* Pulse Glow Enhanced */
+.pulse-glow {
+    animation: pulse-glow 2s infinite;
+    box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+}
+
+@keyframes pulse-glow {
+    0%, 100% { 
+        box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: 0 0 40px rgba(239, 68, 68, 0.8);
+        transform: scale(1.02);
+    }
+}
+</style>
 
 <script>
-    function countdownTimer(duration) {
-        return {
-            remaining: duration,
-            time: '',
-            start() {
-                this.update();
-                setInterval(() => {
-                    if (this.remaining > 0) {
-                        this.remaining--;
-                        this.update();
-                    }
-                }, 1000);
-            },
-            update() {
-                let hrs = Math.floor(this.remaining / 3600);
-                let mins = Math.floor((this.remaining % 3600) / 60);
-                let secs = this.remaining % 60;
-                this.time = 
-                    String(hrs).padStart(2, '0') + ':' + 
-                    String(mins).padStart(2, '0') + ':' + 
-                    String(secs).padStart(2, '0');
-            }
+// Enhanced JavaScript for hero section
+document.addEventListener('DOMContentLoaded', function() {
+    // Sync countdown with hero
+    function updateHeroCountdown() {
+        const countdown = document.getElementById('countdown').textContent;
+        const heroCountdown = document.getElementById('hero-countdown');
+        if (heroCountdown) {
+            heroCountdown.textContent = countdown;
         }
     }
+    
+    // Update every second
+    setInterval(updateHeroCountdown, 1000);
+    
+    // Add floating animation to particles with random delays
+    const particles = document.querySelectorAll('.floating-particle');
+    particles.forEach((particle, index) => {
+        particle.style.animationDelay = `${index * 0.5}s`;
+        particle.style.animationDuration = `${3 + Math.random() * 2}s`;
+    });
+    
+    // Enhanced scroll indicator
+    window.addEventListener('scroll', function() {
+        const scrollIndicator = document.querySelector('.animate-bounce');
+        if (window.scrollY > 100 && scrollIndicator) {
+            scrollIndicator.style.opacity = '0';
+        } else if (scrollIndicator) {
+            scrollIndicator.style.opacity = '1';
+        }
+    });
+});
 </script>
 
-                        
-                       <a href="https://rzp.io/rzp/08Wr24g"> <button @click="$dispatch('open-checkout')" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition-colors shadow-lg hover:shadow-xl">Get Instant Access Now</button></a>
-                        
-                        <p class="text-gray-500 text-sm mt-4">30-day satisfaction guarantee</p>
+    <!-- Enhanced Categories Grid -->
+<section id="categories" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Section Header with Bundle vs Category Choice -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+                Choose Your Perfect Package
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Get exactly what you need - buy individual categories or save big with the complete bundle
+            </p>
+            
+            <!-- Bundle vs Category Toggle -->
+            <div class="bg-white rounded-full p-2 inline-flex shadow-lg mb-8">
+                <button id="bundle-tab" class="px-6 py-3 rounded-full font-semibold transition-all bg-red-500 text-white" onclick="showBundleOffer()">
+                    🔥 Bundle (Save 73%)
+                </button>
+                <button id="category-tab" class="px-6 py-3 rounded-full font-semibold transition-all text-gray-600 hover:text-gray-800" onclick="showCategoryGrid()">
+                    📂 Individual Categories
+                </button>
+            </div>
+        </div>
+
+        <!-- Bundle Offer (Initially Visible) -->
+        <div id="bundle-offer" class="text-center mb-16">
+            <div class="bg-gradient-to-r from-red-500 to-pink-500 rounded-3xl p-8 text-white max-w-4xl mx-auto shadow-2xl transform hover:scale-105 transition-all">
+                <div class="text-6xl mb-4">🎉</div>
+                <h3 class="text-3xl md:text-4xl font-bold mb-4">Complete Bundle - Best Value!</h3>
+                <div class="flex items-center justify-center mb-4">
+                    <div class="text-right mr-8">
+                        <div class="text-gray-200 text-lg">8 Categories × $3 each</div>
+                        <div class="text-2xl line-through text-gray-200">$24.00</div>
+                    </div>
+                    <div class="text-6xl font-bold">$10</div>
+                </div>
+                <div class="text-yellow-300 text-xl font-semibold mb-6">Save $14 (58% OFF)</div>
+                <button onclick="openCheckoutModal('bundle')" class="bg-white text-red-500 text-xl font-bold py-4 px-12 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 mb-4">
+                    Get All 55+ Notion Templates - $10
+                </button>
+                <div class="text-green-200 text-sm">✅ All 8 Categories • ✅ 55+ Notion Templates • ✅ Lifetime Updates</div>
+            </div>
+        </div>
+
+        <!-- Enhanced Categories Grid -->
+        <div id="category-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Productivity Category -->
+            <div class="category-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <!-- Category Header -->
+                <div class="bg-gradient-to-br from-blue-400 to-purple-500 p-6 text-white text-center relative">
+                    <div class="absolute top-2 right-2 bg-white bg-opacity-20 rounded-full px-2 py-1 text-xs font-bold">
+                        POPULAR
+                    </div>
+                    <div class="text-4xl mb-2">⚡</div>
+                    <h3 class="text-xl font-bold mb-1">Productivity</h3>
+                    <div class="text-blue-100 text-sm">7 Premium Notion Templates</div>
+                </div>
+                
+                <!-- Category Content -->
+                <div class="p-6">
+                    <!-- Value Proposition -->
+                    <div class="text-center mb-4">
+                        <div class="text-gray-500 text-sm line-through">Worth $35+</div>
+                        <div class="text-2xl font-bold text-blue-600">$3</div>
+                        <div class="text-green-600 text-sm font-semibold">Save 91%</div>
+                    </div>
+                    
+                    <!-- Template List -->
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Daily Planner Pro</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Task Management System</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Goal Tracker Dashboard</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Time Blocking Template</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Habit Tracker Deluxe</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Weekly Review System</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Priority Matrix Tool</li>
+                    </ul>
+                    
+                    <!-- Benefits -->
+                    <div class="bg-blue-50 rounded-lg p-3 mb-4">
+                        <div class="text-xs text-blue-800 font-semibold mb-1">Perfect for:</div>
+                        <div class="text-xs text-blue-700">Entrepreneurs, Students, Remote Workers</div>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <button onclick="openCategoryCheckoutModal('productivity', 3)" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                        Get Productivity Pack - $3
+                    </button>
+                    <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
+                </div>
+            </div>
+
+            <!-- Business Category -->
+            <div class="category-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-emerald-400 to-teal-500 p-6 text-white text-center relative">
+                    <div class="absolute top-2 right-2 bg-white bg-opacity-20 rounded-full px-2 py-1 text-xs font-bold">
+                        HOT
+                    </div>
+                    <div class="text-4xl mb-2">💼</div>
+                    <h3 class="text-xl font-bold mb-1">Business</h3>
+                    <div class="text-emerald-100 text-sm">7 Premium Notion Templates</div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-gray-500 text-sm line-through">Worth $42+</div>
+                        <div class="text-2xl font-bold text-emerald-600">$3</div>
+                        <div class="text-green-600 text-sm font-semibold">Save 93%</div>
+                    </div>
+                    
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Business Plan Template</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Project Management Hub</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Meeting Notes System</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Client CRM Template</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Invoice Tracker</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Sales Pipeline</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Team Collaboration Board</li>
+                    </ul>
+                    
+                    <div class="bg-emerald-50 rounded-lg p-3 mb-4">
+                        <div class="text-xs text-emerald-800 font-semibold mb-1">Perfect for:</div>
+                        <div class="text-xs text-emerald-700">Freelancers, Small Business Owners, Managers</div>
+                    </div>
+                    
+                    <button onclick="openCategoryCheckoutModal('business', 3)" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                        Get Business Pack - $3
+                    </button>
+                    <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
+                </div>
+            </div>
+
+            <!-- Health Category -->
+            <div class="category-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-pink-400 to-red-500 p-6 text-white text-center">
+                    <div class="text-4xl mb-2">🏃‍♀️</div>
+                    <h3 class="text-xl font-bold mb-1">Health & Fitness</h3>
+                    <div class="text-pink-100 text-sm">7 Premium Notion Templates</div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-gray-500 text-sm line-through">Worth $38+</div>
+                        <div class="text-2xl font-bold text-pink-600">$3</div>
+                        <div class="text-green-600 text-sm font-semibold">Save 92%</div>
+                    </div>
+                    
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Fitness Tracker</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Meal Planning System</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Workout Logger</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Health Dashboard</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Sleep Tracker</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Nutrition Calculator</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Wellness Journal</li>
+                    </ul>
+                    
+                    <div class="bg-pink-50 rounded-lg p-3 mb-4">
+                        <div class="text-xs text-pink-800 font-semibold mb-1">Perfect for:</div>
+                        <div class="text-xs text-pink-700">Fitness Enthusiasts, Health Coaches, Athletes</div>
+                    </div>
+                    
+                    <button onclick="openCategoryCheckoutModal('health', 3)" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                        Get Health Pack - $3
+                    </button>
+                    <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
+                </div>
+            </div>
+
+            <!-- Finance Category -->
+            <div class="category-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-yellow-400 to-orange-500 p-6 text-white text-center">
+                    <div class="text-4xl mb-2">💰</div>
+                    <h3 class="text-xl font-bold mb-1">Finance</h3>
+                    <div class="text-yellow-100 text-sm">7 Premium Notion Templates</div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-gray-500 text-sm line-through">Worth $45+</div>
+                        <div class="text-2xl font-bold text-orange-600">$3</div>
+                        <div class="text-green-600 text-sm font-semibold">Save 93%</div>
+                    </div>
+                    
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Budget Planner Pro</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Expense Tracker</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Investment Portfolio</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Debt Payoff Calculator</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Emergency Fund Tracker</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Financial Goals Dashboard</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Tax Document Organizer</li>
+                    </ul>
+                    
+                    <div class="bg-orange-50 rounded-lg p-3 mb-4">
+                        <div class="text-xs text-orange-800 font-semibold mb-1">Perfect for:</div>
+                        <div class="text-xs text-orange-700">Investors, Savers, Financial Planners</div>
+                    </div>
+                    
+                    <button onclick="openCategoryCheckoutModal('finance', 3)" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                        Get Finance Pack - $3
+                    </button>
+                    <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
+                </div>
+            </div>
+
+            <!-- Learning Category -->
+            <div class="category-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-indigo-400 to-purple-500 p-6 text-white text-center">
+                    <div class="text-4xl mb-2">📚</div>
+                    <h3 class="text-xl font-bold mb-1">Learning</h3>
+                    <div class="text-indigo-100 text-sm">7 Premium Notion Templates</div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-gray-500 text-sm line-through">Worth $40+</div>
+                        <div class="text-2xl font-bold text-indigo-600">$3</div>
+                        <div class="text-green-600 text-sm font-semibold">Save 92%</div>
+                    </div>
+                    
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Study Planner</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Course Tracker</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Note-Taking System</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Research Organizer</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Skill Development Tracker</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Assignment Scheduler</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Learning Progress Dashboard</li>
+                    </ul>
+                    
+                    <div class="bg-indigo-50 rounded-lg p-3 mb-4">
+                        <div class="text-xs text-indigo-800 font-semibold mb-1">Perfect for:</div>
+                        <div class="text-xs text-indigo-700">Students, Teachers, Lifelong Learners</div>
+                    </div>
+                    
+                    <button onclick="openCategoryCheckoutModal('learning', 3)" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                        Get Learning Pack - $3
+                    </button>
+                    <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
+                </div>
+            </div>
+
+            <!-- Lifestyle Category -->
+            <div class="category-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-rose-400 to-pink-500 p-6 text-white text-center">
+                    <div class="text-4xl mb-2">🌟</div>
+                    <h3 class="text-xl font-bold mb-1">Lifestyle</h3>
+                    <div class="text-rose-100 text-sm">7 Premium Notion Templates</div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-gray-500 text-sm line-through">Worth $36+</div>
+                        <div class="text-2xl font-bold text-rose-600">$3</div>
+                        <div class="text-green-600 text-sm font-semibold">Save 92%</div>
+                    </div>
+                    
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Life Planner</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Travel Organizer</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Home Management</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Event Planning Kit</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Gift Tracker</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Bucket List Manager</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Self-Care Tracker</li>
+                    </ul>
+                    
+                    <div class="bg-rose-50 rounded-lg p-3 mb-4">
+                        <div class="text-xs text-rose-800 font-semibold mb-1">Perfect for:</div>
+                        <div class="text-xs text-rose-700">Families, Travel Lovers, Life Organizers</div>
+                    </div>
+                    
+                    <button onclick="openCategoryCheckoutModal('lifestyle', 3)" class="w-full bg-rose-500 hover:bg-rose-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                        Get Lifestyle Pack - $3
+                    </button>
+                    <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
+                </div>
+            </div>
+
+            <!-- Career Category -->
+            <div class="category-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-cyan-400 to-blue-500 p-6 text-white text-center">
+                    <div class="text-4xl mb-2">🚀</div>
+                    <h3 class="text-xl font-bold mb-1">Career</h3>
+                    <div class="text-cyan-100 text-sm">7 Premium Notion Templates</div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-gray-500 text-sm line-through">Worth $41+</div>
+                        <div class="text-2xl font-bold text-cyan-600">$3</div>
+                        <div class="text-green-600 text-sm font-semibold">Save 93%</div>
+                    </div>
+                    
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Resume Builder</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Job Search Tracker</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Interview Prep Kit</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Networking Organizer</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Skills Assessment</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Career Goals Planner</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Performance Review Tracker</li>
+                    </ul>
+                    
+                    <div class="bg-cyan-50 rounded-lg p-3 mb-4">
+                        <div class="text-xs text-cyan-800 font-semibold mb-1">Perfect for:</div>
+                        <div class="text-xs text-cyan-700">Job Seekers, Professionals, Career Changers</div>
+                    </div>
+                    
+                    <button onclick="openCategoryCheckoutModal('career', 3)" class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                        Get Career Pack - $3
+                    </button>
+                    <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
+                </div>
+            </div>
+
+            <!-- Reading Category -->
+            <div class="category-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-amber-400 to-orange-500 p-6 text-white text-center">
+                    <div class="text-4xl mb-2">📖</div>
+                    <h3 class="text-xl font-bold mb-1">Reading</h3>
+                    <div class="text-amber-100 text-sm">7 Premium Notion Templates</div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="text-center mb-4">
+                        <div class="text-gray-500 text-sm line-through">Worth $34+</div>
+                        <div class="text-2xl font-bold text-amber-600">$3</div>
+                        <div class="text-green-600 text-sm font-semibold">Save 91%</div>
+                    </div>
+                    
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Reading List Manager</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Book Review Template</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Reading Goals Tracker</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Book Notes System</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Quote Collection</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Reading Schedule</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Library Organizer</li>
+                    </ul>
+                    
+                    <div class="bg-amber-50 rounded-lg p-3 mb-4">
+                        <div class="text-xs text-amber-800 font-semibold mb-1">Perfect for:</div>
+                        <div class="text-xs text-amber-700">Book Lovers, Researchers, Writers</div>
+                    </div>
+                    
+                    <button onclick="openCategoryCheckoutModal('reading', 3)" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                        Get Reading Pack - $3
+                    </button>
+                    <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bundle Reminder -->
+        <div class="mt-16 text-center">
+            <div class="bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl p-8 text-white max-w-4xl mx-auto">
+                <div class="text-3xl mb-4">💡 Smart Tip</div>
+                <h3 class="text-2xl font-bold mb-4">Why Choose the Bundle?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div>
+                        <div class="text-4xl mb-2">💰</div>
+                        <div class="font-semibold mb-1">Save Big</div>
+                        <div class="text-sm text-purple-100">Get all 8 categories for less than the price of 4 individual ones</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-2">🎯</div>
+                        <div class="font-semibold mb-1">Complete System</div>
+                        <div class="text-sm text-purple-100">Organize every aspect of your life with one comprehensive package</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-2">🔄</div>
+                        <div class="font-semibold mb-1">Future Proof</div>
+                        <div class="text-sm text-purple-100">Get all future Notion templates and updates in every category</div>
+                    </div>
+                </div>
+                <button onclick="openCheckoutModal('bundle')" class="bg-white text-purple-600 font-bold text-xl py-4 px-8 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105">
+                    Get Complete Bundle - $10 (Save $14!)
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Enhanced JavaScript for category functionality
+function showBundleOffer() {
+    document.getElementById('bundle-offer').style.display = 'block';
+    document.getElementById('bundle-tab').className = 'px-6 py-3 rounded-full font-semibold transition-all bg-red-500 text-white';
+    document.getElementById('category-tab').className = 'px-6 py-3 rounded-full font-semibold transition-all text-gray-600 hover:text-gray-800';
+}
+
+function showCategoryGrid() {
+    document.getElementById('bundle-offer').style.display = 'none';
+    document.getElementById('category-tab').className = 'px-6 py-3 rounded-full font-semibold transition-all bg-blue-500 text-white';
+    document.getElementById('bundle-tab').className = 'px-6 py-3 rounded-full font-semibold transition-all text-gray-600 hover:text-gray-800';
+}
+
+function openCategoryCheckoutModal(category, price) {
+    // This function would open a category-specific checkout modal
+    // For now, we'll use the existing checkout modal with category info
+    const modal = document.getElementById('checkout-modal');
+    const title = modal.querySelector('h3');
+    const description = modal.querySelector('p');
+    const priceElement = modal.querySelector('.bg-gray-50 .font-bold');
+    
+    title.textContent = `Purchase ${category.charAt(0).toUpperCase() + category.slice(1)} Pack`;
+    description.textContent = `Get 7 premium ${category} Notion templates instantly`;
+    priceElement.textContent = `$${price}.00`;
+    
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    
+    // Analytics tracking for category purchase
+    // gtag('event', 'begin_checkout', { 
+    //     currency: 'USD', 
+    //     value: price, 
+    //     items: [{ item_name: `${category}_pack`, quantity: 1, price: price }] 
+    // });
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Show bundle by default
+    showBundleOffer();
+});
+</script>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+                Why Choose Our Notion Templates?
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Plug & Play Ready</h3>
+                    <p class="text-gray-600">Simply duplicate and start using immediately. No setup required.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🔄</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lifetime Updates</h3>
+                    <p class="text-gray-600">Get all future template updates and new additions for free.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mobile & Desktop</h3>
+                    <p class="text-gray-600">Works perfectly on all devices - phone, tablet, and desktop.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Instant Access</h3>
+                    <p class="text-gray-600">Download immediately after purchase. No waiting, no delays.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🛡️</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Money-Back Guarantee</h3>
+                    <p class="text-gray-600">30-day full refund if you're not completely satisfied.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+                Template Previews
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openPreviewModal('productivity-dashboard')">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
+                        <span class="text-white text-6xl">📊</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Productivity Dashboard</h3>
+                        <p class="text-gray-600 text-sm">Complete task management system</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openPreviewModal('budget-planner')">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                        <span class="text-white text-6xl">💰</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Budget Planner</h3>
+                        <p class="text-gray-600 text-sm">Track income, expenses, and savings</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openPreviewModal('fitness-tracker')">
+                    <div class="h-48 bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center">
+                        <span class="text-white text-6xl">🏃‍♀️</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Fitness Tracker</h3>
+                        <p class="text-gray-600 text-sm">Monitor workouts and health goals</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openPreviewModal('project-manager')">
+                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                        <span class="text-white text-6xl">🚀</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Project Manager</h3>
+                        <p class="text-gray-600 text-sm">Organize projects and deadlines</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openPreviewModal('meal-planner')">
+                    <div class="h-48 bg-gradient-to-br from-teal-400 to-green-500 flex items-center justify-center">
+                        <span class="text-white text-6xl">🍎</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Meal Planner</h3>
+                        <p class="text-gray-600 text-sm">Plan healthy meals and shopping</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openPreviewModal('goal-tracker')">
+                    <div class="h-48 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
+                        <span class="text-white text-6xl">🎯</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Goal Tracker</h3>
+                        <p class="text-gray-600 text-sm">Set and achieve your goals</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Testimonials -->
-        <section id="testimonials" class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-4">Loved By Thousands Of Users</h2>
-                <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Join over 2,500 students, creators, and professionals who transformed their workflow with our templates</p>
-                
-                <div class="max-w-5xl mx-auto">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                        <div class="bg-teal-50 p-6 rounded-xl card-shadow">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold mr-4">AS</div>
-                                <div>
-                                    <h4 class="font-semibold">Alex Sanders</h4>
-                                    <p class="text-gray-600 text-sm">Freelance Designer</p>
-                                </div>
+   <!-- Enhanced Testimonials Section -->
+<section class="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-10 left-10 w-32 h-32 bg-blue-200 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-20 w-48 h-48 bg-purple-200 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-pink-200 rounded-full blur-2xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <!-- Enhanced Header -->
+        <div class="text-center mb-20">
+            <div class="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-bold mb-6">
+                <span class="mr-2">⭐</span>
+                <span>VERIFIED CUSTOMER RESULTS</span>
+                <span class="ml-2">✅</span>
+            </div>
+            <h2 class="text-5xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
+                Real Users, Real
+                <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    Results
+                </span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                See how our Notion templates have transformed the lives of thousands of users worldwide
+            </p>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            
+            <!-- Testimonial 1 - Productivity Transformation -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                <div class="p-8">
+                    <!-- User Profile -->
+                    <div class="flex items-center mb-6">
+                        <div class="relative">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f3f4f6'/%3E%3Ccircle cx='32' cy='24' r='8' fill='%23d1d5db'/%3E%3Cpath d='M20 48c0-6.627 5.373-12 12-12s12 5.373 12 12' fill='%23d1d5db'/%3E%3C/svg%3E" alt="Sarah Johnson" class="w-16 h-16 rounded-full border-4 border-gradient-to-r from-blue-400 to-purple-500 shadow-lg">
+                            <div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
                             </div>
-                            <div class="flex items-center mb-3">
-                                <div class="flex text-amber-400">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                </div>
-                            </div>
-                            <p class="text-gray-600">"The freelance OS template alone is worth the price. It helped me organize my clients, projects, and invoices in one place. My productivity has doubled!"</p>
                         </div>
-                        
-                        <div class="bg-teal-50 p-6 rounded-xl card-shadow">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold mr-4">MJ</div>
-                                <div>
-                                    <h4 class="font-semibold">Maria Johnson</h4>
-                                    <p class="text-gray-600 text-sm">Graduate Student</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center mb-3">
-                                <div class="flex text-amber-400">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                </div>
-                            </div>
-                            <p class="text-gray-600">"As a student, the study schedule and note-taking templates have been game-changers. I'm more organized and less stressed about deadlines. Worth every penny!"</p>
-                        </div>
-                        
-                        <div class="bg-teal-50 p-6 rounded-xl card-shadow">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold mr-4">DR</div>
-                                <div>
-                                    <h4 class="font-semibold">David Rodriguez</h4>
-                                    <p class="text-gray-600 text-sm">Content Creator</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center mb-3">
-                                <div class="flex text-amber-400">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                </div>
-                            </div>
-                            <p class="text-gray-600">"The content planner and second brain templates have transformed how I organize my ideas and publishing schedule. I've doubled my output without feeling overwhelmed."</p>
+                        <div class="ml-4">
+                            <div class="font-bold text-lg text-gray-900">Sarah Johnson</div>
+                            <div class="text-blue-600 text-sm font-semibold">Digital Marketing Manager</div>
+                            <div class="text-yellow-400 text-lg mt-1">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
-                    
-                    <div class="text-center">
-                        <div class="inline-flex items-center bg-gray-100 rounded-full px-4 py-2 text-sm font-medium mb-4">
-                            <span>As featured on:</span>
-                            <div class="flex items-center ml-2 space-x-4">
-                                <span class="font-bold text-gray-700">ProductHunt</span>
-                                <span class="font-bold text-gray-700">IndieHackers</span>
-                                <span class="font-bold text-gray-700">NotionExperts</span>
-                            </div>
+
+                    <!-- Testimonial Content -->
+                    <blockquote class="text-gray-700 text-lg leading-relaxed mb-6 italic">
+                        "These Notion templates completely transformed my productivity game! I went from chaos to complete organization in just one week. My daily planning template alone has helped me achieve more in the last month than I did in the previous three."
+                    </blockquote>
+
+                    <!-- Template Usage Stats -->
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <div class="text-center bg-blue-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-blue-600">300%</div>
+                            <div class="text-xs text-gray-600">Productivity Boost</div>
                         </div>
-                        
-                        <div class="flex items-center justify-center space-x-2 text-gray-600">
-                            <div class="flex text-amber-400">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            </div>
-                            <span>4.9/5 from 300+ reviews</span>
-                            <span class="mx-2">•</span>
-                            <span>55+ templates</span>
-                            <span class="mx-2">•</span>
-                            <span>Instant access</span>
+                        <div class="text-center bg-green-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-green-600">5</div>
+                            <div class="text-xs text-gray-600">Notion Templates Used</div>
+                        </div>
+                        <div class="text-center bg-purple-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-purple-600">30</div>
+                            <div class="text-xs text-gray-600">Days Active</div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- FAQ -->
-        <section id="faq" class="py-16 bg-teal-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-                
-                <div class="max-w-3xl mx-auto space-y-6">
-                    <div x-data="{ open: false }" class="bg-white rounded-xl card-shadow overflow-hidden">
-                        <button @click="open = !open" class="w-full px-6 py-4 text-left font-medium flex justify-between items-center" :aria-expanded="open">
-                            <span>How do I access the templates after purchase?</span>
-                            <svg class="w-5 h-5 transition-transform" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-4 text-gray-600">
-                            <p>After completing your purchase, you'll receive an email with a link to a Notion page containing all templates. Simply click "Duplicate" in the top right corner to add them to your Notion workspace.</p>
+                <!-- Template Screenshot -->
+                <div class="relative bg-gradient-to-br from-blue-500 to-purple-600 p-6">
+                    <div class="bg-white rounded-2xl p-4 shadow-lg transform rotate-1 hover:rotate-0 transition-transform">
+                        <div class="bg-gradient-to-r from-blue-400 to-purple-500 h-2 rounded-full mb-3"></div>
+                        <div class="space-y-2">
+                            <div class="h-3 bg-gray-200 rounded w-3/4"></div>
+                            <div class="h-3 bg-gray-200 rounded w-1/2"></div>
+                            <div class="h-3 bg-gray-200 rounded w-2/3"></div>
+                        </div>
+                        <div class="mt-4 grid grid-cols-2 gap-2">
+                            <div class="h-8 bg-blue-100 rounded flex items-center justify-center">
+                                <span class="text-blue-600 text-xs font-semibold">✓ Goal 1</span>
+                            </div>
+                            <div class="h-8 bg-green-100 rounded flex items-center justify-center">
+                                <span class="text-green-600 text-xs font-semibold">✓ Goal 2</span>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div x-data="{ open: false }" class="bg-white rounded-xl card-shadow overflow-hidden">
-                        <button @click="open = !open" class="w-full px-6 py-4 text-left font-medium flex justify-between items-center" :aria-expanded="open">
-                            <span>What's your refund policy?</span>
-                            <svg class="w-5 h-5 transition-transform" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-4 text-gray-600">
-                            <p>We offer a 30-day money-back guarantee. If you're not satisfied with the templates, simply email us at support@yourdomain.com within 30 days of purchase for a full refund.</p>
-                        </div>
-                    </div>
-                    
-                    <div x-data="{ open: false }" class="bg-white rounded-xl card-shadow overflow-hidden">
-                        <button @click="open = !open" class="w-full px-6 py-4 text-left font-medium flex justify-between items-center" :aria-expanded="open">
-                            <span>Can I use these templates for commercial purposes?</span>
-                            <svg class="w-5 h-5 transition-transform" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-4 text-gray-600">
-                            <p>Yes! You can use these templates for personal and commercial projects. However, you may not resell or redistribute the templates as your own.</p>
-                        </div>
-                    </div>
-                    
-                    <div x-data="{ open: false }" class="bg-white rounded-xl card-shadow overflow-hidden">
-                        <button @click="open = !open" class="w-full px-6 py-4 text-left font-medium flex justify-between items-center" :aria-expanded="open">
-                            <span>Do I need to pay for Notion to use these templates?</span>
-                            <svg class="w-5 h-5 transition-transform" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-4 text-gray-600">
-                            <p>No, Notion offers a free plan that is sufficient for using all these templates. Some advanced features may require a paid Notion plan, but the templates will work perfectly on the free tier.</p>
-                        </div>
-                    </div>
-                    
-                    <div x-data="{ open: false }" class="bg-white rounded-xl card-shadow overflow-hidden">
-                        <button @click="open = !open" class="w-full px-6 py-4 text-left font-medium flex justify-between items-center" :aria-expanded="open">
-                            <span>Will I receive updates to the templates?</span>
-                            <svg class="w-5 h-5 transition-transform" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-4 text-gray-600">
-                            <p>Yes! All customers receive lifetime updates to the templates. When we release new versions or add new templates to the bundle, you'll get access at no additional cost.</p>
-                        </div>
-                    </div>
-                    
-                    <div x-data="{ open: false }" class="bg-white rounded-xl card-shadow overflow-hidden">
-                        <button @click="open = !open" class="w-full px-6 py-4 text-left font-medium flex justify-between items-center" :aria-expanded="open">
-                            <span>What if I need help with the templates?</span>
-                            <svg class="w-5 h-5 transition-transform" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div x-show="open" x-collapse class="px-6 pb-4 text-gray-600">
-                            <p>We provide detailed documentation for each template. If you still have questions, you can email our support team at support@yourdomain.com, and we'll be happy to help.</p>
-                        </div>
+                    <div class="text-white text-sm mt-3 text-center font-semibold">
+                        📊 Daily Planner Pro Template
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Final CTA -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Productivity?</h2>
-                <p class="text-gray-600 text-xl max-w-2xl mx-auto mb-10">Join thousands of students, creators, and professionals who have already upgraded their Notion workspace.</p>
-                
-                <a href="#pricing" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg text-lg inline-block transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-transform mb-4">Get the 55+ Template Bundle — $10</a>
-                
-                <p class="text-gray-500 text-sm">30-day money-back guarantee • Lifetime access & updates</p>
+            <!-- Testimonial 2 - Business Success -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                <div class="p-8">
+                    <!-- User Profile -->
+                    <div class="flex items-center mb-6">
+                        <div class="relative">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f3f4f6'/%3E%3Ccircle cx='32' cy='24' r='8' fill='%23d1d5db'/%3E%3Cpath d='M20 48c0-6.627 5.373-12 12-12s12 5.373 12 12' fill='%23d1d5db'/%3E%3C/svg%3E" alt="Michael Chen" class="w-16 h-16 rounded-full border-4 border-gradient-to-r from-emerald-400 to-teal-500 shadow-lg">
+                            <div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <div class="font-bold text-lg text-gray-900">Michael Chen</div>
+                            <div class="text-emerald-600 text-sm font-semibold">Startup Founder</div>
+                            <div class="text-yellow-400 text-lg mt-1">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Content -->
+                    <blockquote class="text-gray-700 text-lg leading-relaxed mb-6 italic">
+                        "Best $10 I've ever invested in my business! The CRM and project management Notion templates saved me hundreds of hours and helped me secure 3 major clients in the first month. ROI is absolutely insane!"
+                    </blockquote>
+
+                    <!-- Template Usage Stats -->
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <div class="text-center bg-emerald-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-emerald-600">$50K</div>
+                            <div class="text-xs text-gray-600">Revenue Generated</div>
+                        </div>
+                        <div class="text-center bg-blue-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-blue-600">7</div>
+                            <div class="text-xs text-gray-600">Notion Templates Used</div>
+                        </div>
+                        <div class="text-center bg-orange-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-orange-600">200+</div>
+                            <div class="text-xs text-gray-600">Hours Saved</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template Screenshot -->
+                <div class="relative bg-gradient-to-br from-emerald-500 to-teal-600 p-6">
+                    <div class="bg-white rounded-2xl p-4 shadow-lg transform -rotate-1 hover:rotate-0 transition-transform">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="bg-gradient-to-r from-emerald-400 to-teal-500 h-2 w-1/2 rounded-full"></div>
+                            <div class="text-emerald-600 text-xs font-bold">💼 CRM</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-3">
+                            <div class="bg-emerald-100 rounded p-2">
+                                <div class="text-xs font-semibold text-emerald-800">Client A</div>
+                                <div class="text-xs text-emerald-600">$15K Deal</div>
+                            </div>
+                            <div class="bg-blue-100 rounded p-2">
+                                <div class="text-xs font-semibold text-blue-800">Client B</div>
+                                <div class="text-xs text-blue-600">$20K Deal</div>
+                            </div>
+                        </div>
+                        <div class="h-2 bg-gray-200 rounded mb-2">
+                            <div class="h-2 bg-emerald-400 rounded w-4/5"></div>
+                        </div>
+                        <div class="text-xs text-gray-600 text-center">Pipeline: 80% Complete</div>
+                    </div>
+                    <div class="text-white text-sm mt-3 text-center font-semibold">
+                        💼 Business CRM Template
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+
+            <!-- Testimonial 3 - Health & Fitness -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                <div class="p-8">
+                    <!-- User Profile -->
+                    <div class="flex items-center mb-6">
+                        <div class="relative">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f3f4f6'/%3E%3Ccircle cx='32' cy='24' r='8' fill='%23d1d5db'/%3E%3Cpath d='M20 48c0-6.627 5.373-12 12-12s12 5.373 12 12' fill='%23d1d5db'/%3E%3C/svg%3E" alt="Emma Rodriguez" class="w-16 h-16 rounded-full border-4 border-gradient-to-r from-pink-400 to-red-500 shadow-lg">
+                            <div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <div class="font-bold text-lg text-gray-900">Emma Rodriguez</div>
+                            <div class="text-pink-600 text-sm font-semibold">Product Designer</div>
+                            <div class="text-yellow-400 text-lg mt-1">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Content -->
+                    <blockquote class="text-gray-700 text-lg leading-relaxed mb-6 italic">
+                        "The variety is incredible! I use different Notion templates for work projects, fitness tracking, and personal goals. Lost 15 pounds using the health Notion templates while managing 5 design projects. Life-changing!"
+                    </blockquote>
+
+                    <!-- Template Usage Stats -->
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <div class="text-center bg-pink-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-pink-600">15</div>
+                            <div class="text-xs text-gray-600">Pounds Lost</div>
+                        </div>
+                        <div class="text-center bg-blue-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-blue-600">8</div>
+                            <div class="text-xs text-gray-600">Notion Templates Used</div>
+                        </div>
+                        <div class="text-center bg-green-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-green-600">100%</div>
+                            <div class="text-xs text-gray-600">Goals Achieved</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template Screenshot -->
+                <div class="relative bg-gradient-to-br from-pink-500 to-red-600 p-6">
+                    <div class="bg-white rounded-2xl p-4 shadow-lg transform rotate-1 hover:rotate-0 transition-transform">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="bg-gradient-to-r from-pink-400 to-red-500 h-2 w-2/3 rounded-full"></div>
+                            <div class="text-pink-600 text-xs font-bold">🏃‍♀️ FITNESS</div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-1 mb-3">
+                            <div class="bg-green-100 h-6 rounded flex items-center justify-center">
+                                <span class="text-green-600 text-xs">✓</span>
+                            </div>
+                            <div class="bg-green-100 h-6 rounded flex items-center justify-center">
+                                <span class="text-green-600 text-xs">✓</span>
+                            </div>
+                            <div class="bg-green-100 h-6 rounded flex items-center justify-center">
+                                <span class="text-green-600 text-xs">✓</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-xs">
+                                <span class="text-gray-600">Weight Goal</span>
+                                <span class="text-pink-600 font-semibold">-15 lbs ✓</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span class="text-gray-600">Workouts</span>
+                                <span class="text-pink-600 font-semibold">20/20 ✓</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-white text-sm mt-3 text-center font-semibold">
+                        🏃‍♀️ Fitness Tracker Template
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 4 - Finance Success -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                <div class="p-8">
+                    <!-- User Profile -->
+                    <div class="flex items-center mb-6">
+                        <div class="relative">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f3f4f6'/%3E%3Ccircle cx='32' cy='24' r='8' fill='%23d1d5db'/%3E%3Cpath d='M20 48c0-6.627 5.373-12 12-12s12 5.373 12 12' fill='%23d1d5db'/%3E%3C/svg%3E" alt="David Kim" class="w-16 h-16 rounded-full border-4 border-gradient-to-r from-yellow-400 to-orange-500 shadow-lg">
+                            <div class="absolute -bottom-1 -right-1 bg-green-500 w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <div class="font-bold text-lg text-gray-900">David Kim</div>
+                            <div class="text-orange-600 text-sm font-semibold">Financial Analyst</div>
+                            <div class="text-yellow-400 text-lg mt-1">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Content -->
+                    <blockquote class="text-gray-700 text-lg leading-relaxed mb-6 italic">
+                        "The budget planner changed my financial life! Saved $5,000 in 3 months, paid off $8,000 in debt, and finally have a clear picture of where my money goes. Worth every penny and then some!"
+                    </blockquote>
+
+                    <!-- Template Usage Stats -->
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <div class="text-center bg-green-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-green-600">$5K</div>
+                            <div class="text-xs text-gray-600">Money Saved</div>
+                        </div>
+                        <div class="text-center bg-orange-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-orange-600">$8K</div>
+                            <div class="text-xs text-gray-600">Debt Paid Off</div>
+                        </div>
+                        <div class="text-center bg-blue-50 rounded-lg p-3">
+                            <div class="text-2xl font-bold text-blue-600">3</div>
+                            <div class="text-xs text-gray-600">Months</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template Screenshot -->
+                <div class="relative bg-gradient-to-br from-yellow-500 to-orange-600 p-6">
+                    <div class="bg-white rounded-2xl p-4 shadow-lg transform -rotate-1 hover:rotate-0 transition-transform">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="bg-gradient-to-r from-yellow-400 to-orange-500 h-2 w-3/4 rounded-full"></div>
+                            <div class="text-orange-600 text-xs font-bold">💰 BUDGET</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-3">
+                            <div class="bg-green-100 rounded p-2">
+                                <div class="text-xs font-semibold text-green-800">Saved</div>
+                                <div class="text-xs text-green-600">$5,000</div>
+                            </div>
+                            <div class="bg-red-100 rounded p-2">
+                                <div class="text-xs font-semibold text-red-800">Debt Paid</div>
+                                <div class="text-xs text-red-600">$8,000</div>
+                            </div>
+                        </div>
+                        <div class="bg-orange-100 rounded p-2 text-center">
+                            <div class="text-xs font-semibold text-orange-800">Emergency Fund</div>
+                            <div class="text-xs text-orange-600">$2,500 ✓</div>
+                        </div>
+                    </div>
+                    <div class="text-white text-sm mt-3 text-center font-semibold">
+                        💰 Budget Planner Template
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Testimonials Section -->
+        <div class="bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl p-12 text-white text-center mb-16">
+            <h3 class="text-3xl font-bold mb-6">See More Success Stories</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-6">
+                    <div class="text-4xl mb-3">🎥</div>
+                    <div class="text-2xl font-bold mb-2">Sarah's Journey</div>
+                    <div class="text-purple-100 text-sm">From chaos to organized life</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-6">
+                    <div class="text-4xl mb-3">📈</div>
+                    <div class="text-2xl font-bold mb-2">Michael's Business</div>
+                    <div class="text-purple-100 text-sm">$50K in new revenue</div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-6">
+                    <div class="text-4xl mb-3">💪</div>
+                    <div class="text-2xl font-bold mb-2">Emma's Transform</div>
+                    <div class="text-purple-100 text-sm">Health & career success</div>
+                </div>
+            </div>
+            <button class="bg-white text-purple-600 font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105">
+                Watch Video Testimonials →
+            </button>
+        </div>
+
+        <!-- Stats Overview -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <div class="text-3xl font-bold text-blue-600 mb-2">300+</div>
+                <div class="text-gray-600 text-sm">Happy Customers</div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <div class="text-3xl font-bold text-green-600 mb-2">4.9/5</div>
+                <div class="text-gray-600 text-sm">Average Rating</div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <div class="text-3xl font-bold text-purple-600 mb-2">98%</div>
+                <div class="text-gray-600 text-sm">Success Rate</div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <div class="text-3xl font-bold text-orange-600 mb-2">55+</div>
+                <div class="text-gray-600 text-sm">Premium Notion Templates</div>
+            </div>
+        </div>
+
+        <!-- CTA at the end -->
+        <div class="text-center mt-16">
+            <div class="inline-flex items-center bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-full text-lg font-bold mb-6 animate-pulse">
+                <span class="mr-2">🚀</span>
+                <span>Join These Success Stories Today!</span>
+                <span class="ml-2">✨</span>
+            </div>
+            <div>
+                <button onclick="openCheckoutModal()" class="bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white text-xl font-bold py-4 px-12 rounded-full transition-all transform hover:scale-105 shadow-2xl">
+                    Get Your Notion Templates Now - $10
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Additional animations for testimonials */
+@keyframes float-gentle {
+    0%, 100% { transform: translateY(0px) rotate(1deg); }
+    50% { transform: translateY(-5px) rotate(-1deg); }
+}
+
+.testimonial-card:hover .template-preview {
+    animation: float-gentle 2s ease-in-out infinite;
+}
+
+/* Enhanced shadow effects */
+.shadow-3xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Verified badge animation */
+.verified-badge {
+    animation: pulse 2s infinite;
+}
+
+/* Template preview hover effects */
+.template-preview {
+    transition: all 0.3s ease;
+}
+
+.template-preview:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+</style>
+
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+                Frequently Asked Questions
+            </h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white rounded-lg shadow-md" data-faq="1">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none" onclick="toggleFAQ(1)">
+                        What platforms do these Notion templates work with?
+                        <span class="float-right transition-transform duration-200" id="faq-icon-1">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-1">
+                        Our Notion templates are designed for Notion, but many can also be adapted for other platforms like Google Sheets, Excel, and Airtable. They're platform-agnostic productivity systems.
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md" data-faq="2">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none" onclick="toggleFAQ(2)">
+                        How do I access the Notion templates after purchase?
+                        <span class="float-right transition-transform duration-200" id="faq-icon-2">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-2">
+                        You'll receive an instant download link via email immediately after purchase. All Notion templates are delivered as duplicatable links that you can add to your workspace with one click.
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md" data-faq="3">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none" onclick="toggleFAQ(3)">
+                        Can I customize the Notion templates?
+                        <span class="float-right transition-transform duration-200" id="faq-icon-3">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-3">
+                        Absolutely! All Notion templates are fully customizable. You can modify colors, add fields, change layouts, and adapt them to your specific needs. They're designed to be flexible starting points.
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md" data-faq="4">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none" onclick="toggleFAQ(4)">
+                        What's included in the bundle?
+                        <span class="float-right transition-transform duration-200" id="faq-icon-4">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-4">
+                        You get 55+ premium Notion templates across 8 categories: Productivity, Business, Health, Finance, Learning, Lifestyle, Career, and Reading. Plus bonus setup guides and video tutorials.
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md" data-faq="5">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none" onclick="toggleFAQ(5)">
+                        Is there a money-back guarantee?
+                        <span class="float-right transition-transform duration-200" id="faq-icon-5">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-5">
+                        Yes! We offer a 30-day money-back guarantee. If you're not completely satisfied with the Notion templates, contact us for a full refund, no questions asked.
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md" data-faq="6">
+                    <button class="w-full text-left p-6 font-semibold text-lg focus:outline-none" onclick="toggleFAQ(6)">
+                        Do I need any technical skills to use these?
+                        <span class="float-right transition-transform duration-200" id="faq-icon-6">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600" id="faq-content-6">
+                        Not at all! These Notion templates are designed for everyone. If you can click a button and type text, you can use these Notion templates. We include setup instructions for beginners.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 gradient-bg text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Ready to Transform Your Life?
+            </h2>
+            <p class="text-xl mb-8 text-gray-100">
+                Join 300+ satisfied users who've already boosted their productivity with our Notion templates.
+            </p>
+            
+            <div class="bg-white bg-opacity-10 rounded-2xl p-8 mb-8">
+                <div class="text-3xl font-bold mb-2">🔥 Limited Time Offer</div>
+                <div class="text-6xl font-bold mb-2">$10</div>
+                <div class="text-gray-300 line-through mb-4">Regular Price: $200+</div>
+                <div class="text-green-300 font-semibold text-lg">Save 95% Today!</div>
+            </div>
+            
+            <button onclick="openCheckoutModal()" class="bg-red-500 hover:bg-red-600 text-white text-2xl font-bold py-4 px-12 rounded-full transition-all transform hover:scale-105 pulse-glow mb-4">
+                Get All 55+ Notion Templates - $10
+            </button>
+            
+            <div class="text-green-300 font-semibold">
+                🛡️ 30-Day Money-Back Guarantee
+            </div>
+            <div class="text-gray-300 mt-2">
+                ⏰ Offer expires in: <span id="final-countdown" class="font-mono">23:59:42</span>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 py-12">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <div class="text-xl font-bold text-teal-600 mb-4">NotionTemplateBundle</div>
-                <p class="text-gray-600 max-w-2xl mx-auto mb-6">Premium Notion templates for students, creators, freelancers, and businesses. Organize your life and work with our carefully designed templates.</p>
-                
-                <div class="flex justify-center space-x-6 mb-6">
-                    <a href="#" class="text-gray-500 hover:text-teal-600 transition-colors">Terms</a>
-                    <a href="#" class="text-gray-500 hover:text-teal-600 transition-colors">Privacy</a>
-                    <a href="mailto:support@yourdomain.com" class="text-gray-500 hover:text-teal-600 transition-colors">Contact</a>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Template Bundle</h3>
+                    <p class="text-gray-400">Premium productivity Notion templates to transform your life and work.</p>
                 </div>
-                
-                <p class="text-gray-500 text-sm">© 2025 NotionTemplateBundle. All rights reserved.</p>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Support</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Refund Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Template Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Template Bundle. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Sticky Mobile CTA -->
+    <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 bg-red-500 text-white p-4 md:hidden z-50 transform translate-y-full transition-transform">
+        <button onclick="openCheckoutModal()" class="w-full bg-white text-red-500 font-bold py-3 px-4 rounded-lg">
+            Get Bundle - $10 🔥
+        </button>
+    </div>
+
     <!-- Checkout Modal -->
-    <div x-data="{ checkoutOpen: false, currentStep: 1 }" @open-checkout.window="checkoutOpen = true" x-show="checkoutOpen" class="fixed inset-0 z-50 overflow-y-auto" style="display: none;" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-            <div x-show="checkoutOpen" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
-
-            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-
-            <div x-show="checkoutOpen" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                    <div class="sm:flex sm:items-start">
-                        <div class="w-full">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center" id="modal-title">Complete Your Purchase</h3>
-                            
-                            <div x-show="currentStep === 1">
-                                <div class="bg-teal-50 p-4 rounded-lg mb-6">
-                                    <div class="flex justify-between items-center mb-2">
-                                        <span class="font-medium">55+ Notion Templates Bundle</span>
-                                        <span class="font-bold">$10</span>
-                                    </div>
-                                    <p class="text-sm text-gray-600">One-time payment • Lifetime access</p>
-                                </div>
-                                
-                                <form class="space-y-4">
-                                    <div>
-                                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
-                                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500" placeholder="your@email.com" required>
-                                    </div>
-                                    
-                                    <div>
-                                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full name</label>
-                                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500" placeholder="John Doe" required>
-                                    </div>
-                                    
-                                    <div>
-                                        <label class="flex items-start">
-                                            <input type="checkbox" class="mt-1 mr-2" required>
-                                            <span class="text-sm text-gray-600">I agree to the <a href="#" class="text-teal-600 hover:underline">terms and conditions</a></span>
-                                        </label>
-                                    </div>
-                                    
-                                    <button @click="currentStep = 2" type="button" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-4 rounded-lg transition-colors">Continue to Payment</button>
-                                </form>
-                            </div>
-                            
-                            <div x-show="currentStep === 2">
-                                <div class="text-center mb-6">
-                                    <div class="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4">
-                                        <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                                    </div>
-                                    <h4 class="text-lg font-medium">Secure Payment</h4>
-                                    <p class="text-gray-600 text-sm">Your payment information is encrypted</p>
-                                </div>
-                                
-                                <div class="bg-gray-100 p-4 rounded-lg mb-6 text-center">
-                                    <p class="text-sm text-gray-600">We use Stripe to process payments securely.</p>
-                                    <!-- STRIPE_PUB_KEY: Replace with your Stripe publishable key -->
-                                    <!-- <div id="stripe-payment-element">Stripe.js will inject the Payment Element here</div> -->
-                                    
-                                    <div class="mt-4 p-4 border border-dashed border-gray-300 rounded-lg text-left">
-                                        <p class="text-sm font-medium mb-2">Payment Details (Placeholder)</p>
-                                        <p class="text-xs text-gray-600">In a real implementation, Stripe Elements would appear here for secure card input.</p>
-                                    </div>
-                                </div>
-                                
-                                <button @click="currentStep = 3" type="button" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-4 rounded-lg transition-colors">Pay $10</button>
-                                <button @click="currentStep = 1" type="button" class="w-full mt-3 text-gray-600 font-medium py-3 px-4 rounded-lg border border-gray-300 transition-colors">Back</button>
-                            </div>
-                            
-                            <div x-show="currentStep === 3">
-                                <div class="text-center py-6">
-                                    <div class="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4">
-                                        <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    </div>
-                                    <h4 class="text-lg font-medium mb-2">Payment Successful!</h4>
-                                    <p class="text-gray-600 mb-6">Thank you for your purchase. You'll receive an email with download instructions shortly.</p>
-                                    
-                                    <div class="bg-teal-50 p-4 rounded-lg text-left mb-6">
-                                        <p class="font-medium mb-2">How to access your templates:</p>
-                                        <ol class="list-decimal pl-5 space-y-2 text-sm">
-                                            <li>Check your email for a message from us (may take a few minutes)</li>
-                                            <li>Click the link to access the template bundle</li>
-                                            <li>Click "Duplicate" in the top right corner</li>
-                                            <li>Select the workspace where you want to add the templates</li>
-                                            <li>That's it! Start using your new templates immediately</li>
-                                        </ol>
-                                    </div>
-                                    
-                                   <a href="https://rzp.io/rzp/08Wr24g"> <button @click="checkoutOpen = false" type="button" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-4 rounded-lg transition-colors">Got it</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div id="checkout-modal" class="fixed inset-0 bg-black bg-opacity-50 modal-backdrop hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-8 relative">
+            <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold mb-2">Complete Your Purchase</h3>
+                <p class="text-gray-600">Get instant access to all 55+ Notion templates</p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                <div class="flex justify-between items-center">
+                    <span>Premium Template Bundle</span>
+                    <span class="font-bold">$10.00</span>
                 </div>
+                <div class="text-sm text-gray-500 mt-1">55+ Notion Templates • Instant Download</div>
+            </div>
+            
+            <!-- Payment Integration Point -->
+            <!-- Replace this section with Stripe Elements or PayPal SDK -->
+            <div class="space-y-4 mb-6">
+                <input type="email" placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="text" placeholder="Card Number" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" placeholder="MM/YY" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="text" placeholder="CVC" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+            </div>
+            
+            <button class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-4 rounded-lg transition-all">
+                Complete Purchase - $10
+            </button>
+            
+            <div class="text-center mt-4 text-sm text-gray-500">
+                🔒 Secure payment • 🛡️ 30-day guarantee
             </div>
         </div>
     </div>
 
-    <!-- Email Capture Modal -->
-    <div x-data="{ emailModalOpen: false }" @click.away="emailModalOpen = false" x-show="emailModalOpen" class="fixed inset-0 z-50 overflow-y-auto" style="display: none;" aria-labelledby="email-modal-title" role="dialog" aria-modal="true">
-        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-            <div x-show="emailModalOpen" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
-
-            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-
-            <div x-show="emailModalOpen" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-md sm:w-full">
-                <div class="bg-white px-6 py-8">
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2 text-center" id="email-modal-title">Get Notion Tips & Updates</h3>
-                        <p class="text-gray-600 text-center mb-6">Join our newsletter for productivity tips, template updates, and exclusive content.</p>
-                        
-                        <form class="space-y-4">
-                            <div>
-                                <label for="newsletter-email" class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
-                                <input type="email" id="newsletter-email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500" placeholder="your@email.com" required>
-                            </div>
-                            
-                            <button type="button" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-4 rounded-lg transition-colors">Subscribe</button>
-                        </form>
-                        
-                        <p class="text-gray-500 text-xs text-center mt-4">We respect your privacy. Unsubscribe at any time.</p>
-                    </div>
-                </div>
-                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                    <button @click="emailModalOpen = false" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">No thanks</button>
-                </div>
+    <!-- Preview Modal -->
+    <div id="preview-modal" class="fixed inset-0 bg-black bg-opacity-75 modal-backdrop hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-full overflow-auto relative">
+            <button onclick="closePreviewModal()" class="absolute top-4 right-4 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75 z-10">&times;</button>
+            <div id="preview-content" class="p-8">
+                <!-- Preview content will be inserted here -->
             </div>
         </div>
     </div>
 
-   
     <script>
-        // Open email modal on exit intent
-        document.addEventListener('mouseout', function(e) {
-            if (!e.relatedTarget && e.clientY < 10) {
-                setTimeout(() => {
-                    // Uncomment to enable exit intent popup
-                    // Alpine.store('emailModalOpen', true);
-                }, 500);
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const midnight = new Date();
+            midnight.setHours(24, 0, 0, 0);
+            const timeLeft = midnight.getTime() - now;
+            
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            document.getElementById('countdown').textContent = formattedTime;
+            document.getElementById('final-countdown').textContent = formattedTime;
+        }
+        
+        // Update progress bar and sold count
+        function updateProgress() {
+            const soldCount = document.getElementById('sold-count');
+            const progressBar = document.getElementById('progress-bar');
+            
+            let currentSold = parseInt(soldCount.textContent);
+            if (currentSold < 850) {
+                currentSold += Math.floor(Math.random() * 3) + 1;
+                soldCount.textContent = currentSold;
+                progressBar.style.width = (currentSold / 1000) * 100 + '%';
+            }
+        }
+        
+        // Sticky CTA for mobile
+        function handleStickyCTA() {
+            const stickyCTA = document.getElementById('sticky-cta');
+            const scrollY = window.scrollY;
+            
+            if (scrollY > 500) {
+                stickyCTA.classList.remove('translate-y-full');
+            } else {
+                stickyCTA.classList.add('translate-y-full');
+            }
+        }
+        
+        // FAQ Toggle
+        function toggleFAQ(number) {
+            const content = document.getElementById(`faq-content-${number}`);
+            const icon = document.getElementById(`faq-icon-${number}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.textContent = '−';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.textContent = '+';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        // Modal Functions
+        function openCheckoutModal() {
+            document.getElementById('checkout-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Analytics tracking point
+            // gtag('event', 'begin_checkout', { currency: 'USD', value: 10 });
+        }
+        
+        function closeCheckoutModal() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        function openPreviewModal(templateId) {
+            const modal = document.getElementById('preview-modal');
+            const content = document.getElementById('preview-content');
+            
+            // Template preview content (you would replace this with actual template previews)
+            const previews = {
+                'productivity-dashboard': {
+                    title: 'Productivity Dashboard',
+                    description: 'A comprehensive task management and goal tracking system',
+                    features: ['Task Management', 'Goal Tracking', 'Time Blocking', 'Progress Analytics']
+                },
+                'budget-planner': {
+                    title: 'Budget Planner',
+                    description: 'Complete financial tracking and budgeting system',
+                    features: ['Income Tracking', 'Expense Categories', 'Savings Goals', 'Monthly Reports']
+                }
+                // Add more previews as needed
+            };
+            
+            const template = previews[templateId] || previews['productivity-dashboard'];
+            
+            content.innerHTML = `
+                <h2 class="text-3xl font-bold mb-4">${template.title}</h2>
+                <p class="text-gray-600 mb-6">${template.description}</p>
+                <div class="bg-gray-100 h-96 rounded-lg flex items-center justify-center mb-6">
+                    <span class="text-6xl">📋</span>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Key Features:</h3>
+                <ul class="space-y-2 mb-6">
+                    ${template.features.map(feature => `<li class="flex items-center"><span class="text-green-500 mr-2">✓</span>${feature}</li>`).join('')}
+                </ul>
+                <button onclick="openCheckoutModal(); closePreviewModal();" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-lg">
+                    Get This Template - $10
+                </button>
+            `;
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closePreviewModal() {
+            document.getElementById('preview-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Scroll to section
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start countdown timer
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+            
+            // Update progress periodically
+            setInterval(updateProgress, 30000);
+            
+            // Handle sticky CTA
+            window.addEventListener('scroll', handleStickyCTA);
+            
+            // Close modals on outside click
+            document.getElementById('checkout-modal').addEventListener('click', function(e) {
+                if (e.target === this) closeCheckoutModal();
+            });
+            
+            document.getElementById('preview-modal').addEventListener('click', function(e) {
+                if (e.target === this) closePreviewModal();
+            });
+            
+            // Analytics initialization point
+            // gtag('config', 'GA_MEASUREMENT_ID');
+            
+            // Payment processor initialization point
+            // Initialize Stripe or PayPal here
+        });
+        
+        // Keyboard accessibility
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeCheckoutModal();
+                closePreviewModal();
             }
         });
     </script>
