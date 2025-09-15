@@ -185,14 +185,14 @@
         <!-- Enhanced CTAs -->
         <div class="space-y-6 mb-12">
             <!-- Primary CTA -->
-            <button id="primary-cta" class="group relative inline-flex items-center justify-center w-full md:w-auto bg-gradient-to-r from-red-500 via-pink-500 to-red-600 hover:from-red-600 hover:via-pink-600 hover:to-red-700 text-white text-2xl font-black py-6 px-12 rounded-2xl transition-all duration-300 transform hover:scale-110 shadow-2xl hover:shadow-red-500/50" onclick="openCheckoutModal()">
+           <a href="https://rzp.io/rzp/08Wr24g"><button id="primary-cta" class="group relative inline-flex items-center justify-center w-full md:w-auto bg-gradient-to-r from-red-500 via-pink-500 to-red-600 hover:from-red-600 hover:via-pink-600 hover:to-red-700 text-white text-2xl font-black py-6 px-12 rounded-2xl transition-all duration-300 transform hover:scale-110 shadow-2xl hover:shadow-red-500/50" onclick="()">
                 <span class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 translate-x-full group-hover:translate-x-0 transition-transform duration-700"></span>
                 <span class="relative flex items-center">
                     <span class="text-3xl mr-3 animate-bounce">🔥</span>
                     <span>GET ALL 55+ Notion TEMPLATES - $10</span>
                     <span class="text-3xl ml-3 animate-bounce">🚀</span>
                 </span>
-            </button>
+            </button></a> 
 
             <!-- Secondary CTA -->
             <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
@@ -201,12 +201,22 @@
                     Browse Categories
                 </button>
                 
-               <a href="https://rzp.io/rzp/08Wr24g"> <button class="text-cyan-300 hover:text-cyan-200 text-xl font-semibold underline transition-colors" onclick="scrollToSection('preview')">
+                <button  class="text-cyan-300 hover:text-cyan-200 text-xl font-semibold underline transition-colors" onclick="scrollToSection('preview')">
                     <span class="mr-2">👀</span>
                     View Template Previews
-                </button></a>
+                </button>
             </div>
         </div>
+<script>
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.error("Section not found: " + sectionId);
+    }
+  }
+</script>
 
         <!-- Enhanced Guarantees -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -413,7 +423,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="text-6xl font-bold">$10</div>
                 </div>
                 <div class="text-yellow-300 text-xl font-semibold mb-6">Save $14 (58% OFF)</div>
-            <a href="https://rzp.io/rzp/08Wr24g">    <button onclick="openCheckoutModal('bundle')" class="bg-white text-red-500 text-xl font-bold py-4 px-12 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 mb-4">
+            <a href="https://rzp.io/rzp/08Wr24g">    <button onclick="('bundle')" class="bg-white text-red-500 text-xl font-bold py-4 px-12 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 mb-4">
                     Get All 55+ Notion Templates - $10
                 </button></a>
                 <div class="text-green-200 text-sm">✅ All 8 Categories • ✅ 55+ Notion Templates • ✅ Lifetime Updates</div>
@@ -461,7 +471,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     
                     <!-- CTA Button -->
-                   <a href="https://rzp.io/rzp/m4007v6"> <button onclick="openCategoryCheckoutModal('productivity', 3)" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                   <a href="https://rzp.io/rzp/m4007v6"> <button onclick="('productivity', 3)" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
                         Get Productivity Pack - $3
                     </button></a>
                     <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
@@ -501,7 +511,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="text-xs text-emerald-700">Freelancers, Small Business Owners, Managers</div>
                     </div>
                     
-                   <a href="https://rzp.io/rzp/E7yQpcV"> <button onclick="openCategoryCheckoutModal('business', 3)" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                   <a href="https://rzp.io/rzp/E7yQpcV"> <button onclick="('business', 3)" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
                         Get Business Pack - $3
                     </button></a>
                     <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
@@ -538,7 +548,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="text-xs text-pink-700">Fitness Enthusiasts, Health Coaches, Athletes</div>
                     </div>
                     
-                   <a href="https://rzp.io/rzp/FJO2CvPa"> <button onclick="openCategoryCheckoutModal('health', 3)" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                   <a href="https://rzp.io/rzp/FJO2CvPa"> <button onclick="('health', 3)" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
                         Get Health Pack - $3
                     </button></a>
                     <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
@@ -575,7 +585,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="text-xs text-orange-700">Investors, Savers, Financial Planners</div>
                     </div>
                     
-                   <a href="https://rzp.io/rzp/1IgMX9EB"> <button onclick="openCategoryCheckoutModal('finance', 3)" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                   <a href="https://rzp.io/rzp/1IgMX9EB"> <button onclick="('finance', 3)" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
                         Get Finance Pack - $3
                     </button></a>
                     <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
@@ -612,7 +622,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="text-xs text-indigo-700">Students, Teachers, Lifelong Learners</div>
                     </div>
                     
-                  <a href="https://rzp.io/rzp/HZz7I6h">  <button onclick="openCategoryCheckoutModal('learning', 3)" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                  <a href="https://rzp.io/rzp/HZz7I6h">  <button onclick="('learning', 3)" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
                         Get Learning Pack - $3
                     </button></a>
                     <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
@@ -649,7 +659,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="text-xs text-rose-700">Families, Travel Lovers, Life Organizers</div>
                     </div>
                     
-                   <a href="https://rzp.io/rzp/WlyZYy4s"> <button onclick="openCategoryCheckoutModal('lifestyle', 3)" class="w-full bg-rose-500 hover:bg-rose-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                   <a href="https://rzp.io/rzp/WlyZYy4s"> <button onclick="('lifestyle', 3)" class="w-full bg-rose-500 hover:bg-rose-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
                         Get Lifestyle Pack - $3
                     </button></a>
                     <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
@@ -686,7 +696,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="text-xs text-cyan-700">Job Seekers, Professionals, Career Changers</div>
                     </div>
                     
-                 <a href="https://rzp.io/rzp/PhtM720">   <button onclick="openCategoryCheckoutModal('career', 3)" class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                 <a href="https://rzp.io/rzp/PhtM720">   <button onclick="('career', 3)" class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
                         Get Career Pack - $3
                     </button></a>
                     <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
@@ -723,7 +733,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="text-xs text-amber-700">Book Lovers, Researchers, Writers</div>
                     </div>
                     
-                  <a href="https://rzp.io/rzp/tRVofTlX">  <button onclick="openCategoryCheckoutModal('reading', 3)" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
+                  <a href="https://rzp.io/rzp/tRVofTlX">  <button onclick="('reading', 3)" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-4 rounded-lg transition-all transform hover:scale-105 mb-2">
                         Get Reading Pack - $3
                     </button></a>
                     <div class="text-center text-xs text-gray-500">Instant download • 30-day guarantee</div>
@@ -753,7 +763,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="text-sm text-purple-100">Get all future Notion templates and updates in every category</div>
                     </div>
                 </div>
-           <a href="https://rzp.io/rzp/08Wr24g">     <button onclick="openCheckoutModal('bundle')" class="bg-white text-purple-600 font-bold text-xl py-4 px-8 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105">
+           <a href="https://rzp.io/rzp/08Wr24g">     <button onclick="('bundle')" class="bg-white text-purple-600 font-bold text-xl py-4 px-8 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105">
                     Get Complete Bundle - $10 (Save $14!)
                 </button></a>
             </div>
@@ -775,7 +785,7 @@ function showCategoryGrid() {
     document.getElementById('bundle-tab').className = 'px-6 py-3 rounded-full font-semibold transition-all text-gray-600 hover:text-gray-800';
 }
 
-function openCategoryCheckoutModal(category, price) {
+function (category, price) {
     // This function would open a category-specific checkout modal
     // For now, we'll use the existing checkout modal with category info
     const modal = document.getElementById('checkout-modal');
@@ -1287,7 +1297,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="ml-2">✨</span>
             </div>
             <div>
-               <a href="https://rzp.io/rzp/08Wr24g"> <button onclick="openCheckoutModal()" class="bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white text-xl font-bold py-4 px-12 rounded-full transition-all transform hover:scale-105 shadow-2xl">
+               <a href="https://rzp.io/rzp/08Wr24g"> <button onclick="()" class="bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white text-xl font-bold py-4 px-12 rounded-full transition-all transform hover:scale-105 shadow-2xl">
                     Get Your Notion Templates Now - $10
                 </button></a>
             </div>
@@ -1415,7 +1425,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="text-green-300 font-semibold text-lg">Save 95% Today!</div>
             </div>
             
-           <a href="https://rzp.io/rzp/08Wr24g"> <button onclick="openCheckoutModal()" class="bg-red-500 hover:bg-red-600 text-white text-2xl font-bold py-4 px-12 rounded-full transition-all transform hover:scale-105 pulse-glow mb-4">
+           <a href="https://rzp.io/rzp/08Wr24g"> <button onclick="()" class="bg-red-500 hover:bg-red-600 text-white text-2xl font-bold py-4 px-12 rounded-full transition-all transform hover:scale-105 pulse-glow mb-4">
                 Get All 55+ Notion Templates - $10
             </button></a>
             
@@ -1461,7 +1471,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <!-- Sticky Mobile CTA -->
     <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 bg-red-500 text-white p-4 md:hidden z-50 transform translate-y-full transition-transform">
-        <button onclick="openCheckoutModal()" class="w-full bg-white text-red-500 font-bold py-3 px-4 rounded-lg">
+        <button onclick="()" class="w-full bg-white text-red-500 font-bold py-3 px-4 rounded-lg">
             Get Bundle - $10 🔥
         </button>
     </div>
@@ -1575,7 +1585,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Modal Functions
-        function openCheckoutModal() {
+        function () {
             document.getElementById('checkout-modal').classList.remove('hidden');
             document.body.style.overflow = 'hidden';
             
@@ -1619,7 +1629,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <ul class="space-y-2 mb-6">
                     ${template.features.map(feature => `<li class="flex items-center"><span class="text-green-500 mr-2">✓</span>${feature}</li>`).join('')}
                 </ul>
-                <button onclick="openCheckoutModal(); closePreviewModal();" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-lg">
+                <button onclick="(); closePreviewModal();" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-lg">
                     Get This Template - $10
                 </button>
             `;
