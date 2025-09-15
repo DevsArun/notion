@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Premium Template Bundle</title>
+    <meta name="description" content="Privacy Policy for Premium Template Bundle. Learn how we collect, use, and protect your personal information.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://templatebundle.com/privacy">
+    <meta property="og:title" content="Privacy Policy - Premium Template Bundle">
+    <meta property="og:description" content="Transparent privacy policy explaining how we protect and use your personal data.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 50%, #8b5cf6 100%);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for table of contents */
+        .toc-scroll::-webkit-scrollbar {
+            width: 4px;
+        }
+        .toc-scroll::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .toc-scroll::-webkit-scrollbar-thumb {
+            background: #10b981;
+            border-radius: 2px;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.6); }
+        }
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-900 scroll-smooth">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
+                        📋 Template Bundle
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="index.html#categories" class="text-gray-600 hover:text-blue-600 transition-colors">Templates</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-blue-600 transition-colors">Terms</a>
+                    <a href="#" class="text-green-600 font-semibold">Privacy</a>
+                    <a href="index.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Buy Now - $10
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        
+        <!-- Floating Privacy Icons -->
+        <div class="absolute top-20 left-10 float-animation">
+            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                <span class="text-2xl">🔒</span>
+            </div>
+        </div>
+        <div class="absolute top-32 right-20 float-animation" style="animation-delay: 1s;">
+            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                <span class="text-xl">🛡️</span>
+            </div>
+        </div>
+        <div class="absolute bottom-20 left-1/4 float-animation" style="animation-delay: 2s;">
+            <div class="w-14 h-14 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                <span class="text-xl">🔐</span>
+            </div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center text-white">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Privacy
+                <span class="bg-gradient-to-r from-yellow-300 to-green-300 bg-clip-text text-transparent">
+                    Policy
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto leading-relaxed">
+                Your privacy is our priority. Learn how we collect, use, and protect your personal information with complete transparency.
+            </p>
+            
+            <!-- Privacy Highlights -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-4 border border-white border-opacity-20">
+                    <div class="text-2xl mb-2">🔒</div>
+                    <div class="text-sm font-bold">Secure</div>
+                    <div class="text-gray-200 text-xs">Bank-level encryption</div>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-4 border border-white border-opacity-20">
+                    <div class="text-2xl mb-2">🚫</div>
+                    <div class="text-sm font-bold">No Selling</div>
+                    <div class="text-gray-200 text-xs">Never sold to others</div>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-4 border border-white border-opacity-20">
+                    <div class="text-2xl mb-2">✅</div>
+                    <div class="text-sm font-bold">GDPR</div>
+                    <div class="text-gray-200 text-xs">Fully compliant</div>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-4 border border-white border-opacity-20">
+                    <div class="text-2xl mb-2">🗑️</div>
+                    <div class="text-sm font-bold">Your Control</div>
+                    <div class="text-gray-200 text-xs">Delete anytime</div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <div class="text-sm text-gray-200 mb-2">Last Updated: September 15, 2025</div>
+                <button onclick="scrollToContent()" class="bg-white text-green-600 text-lg font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 pulse-glow">
+                    Read Our Privacy Policy
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+                
+                <!-- Table of Contents (Sticky Sidebar) -->
+                <div class="lg:col-span-1">
+                    <div class="sticky top-24">
+                        <div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-200">
+                            <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="mr-2">📋</span>
+                                Quick Navigation
+                            </h3>
+                            <nav class="toc-scroll max-h-96 overflow-y-auto">
+                                <ul class="space-y-2 text-sm">
+                                    <li><a href="#overview" class="text-green-600 hover:text-green-800 transition-colors block py-1">1. Privacy Overview</a></li>
+                                    <li><a href="#information-collect" class="text-green-600 hover:text-green-800 transition-colors block py-1">2. Information We Collect</a></li>
+                                    <li><a href="#how-we-use" class="text-green-600 hover:text-green-800 transition-colors block py-1">3. How We Use Your Data</a></li>
+                                    <li><a href="#sharing" class="text-green-600 hover:text-green-800 transition-colors block py-1">4. Information Sharing</a></li>
+                                    <li><a href="#cookies" class="text-green-600 hover:text-green-800 transition-colors block py-1">5. Cookies & Tracking</a></li>
+                                    <li><a href="#data-security" class="text-green-600 hover:text-green-800 transition-colors block py-1">6. Data Security</a></li>
+                                    <li><a href="#your-rights" class="text-green-600 hover:text-green-800 transition-colors block py-1">7. Your Privacy Rights</a></li>
+                                    <li><a href="#data-retention" class="text-green-600 hover:text-green-800 transition-colors block py-1">8. Data Retention</a></li>
+                                    <li><a href="#international" class="text-green-600 hover:text-green-800 transition-colors block py-1">9. International Transfers</a></li>
+                                    <li><a href="#children" class="text-green-600 hover:text-green-800 transition-colors block py-1">10. Children's Privacy</a></li>
+                                    <li><a href="#california" class="text-green-600 hover:text-green-800 transition-colors block py-1">11. California Privacy Rights</a></li>
+                                    <li><a href="#updates" class="text-green-600 hover:text-green-800 transition-colors block py-1">12. Policy Updates</a></li>
+                                    <li><a href="#contact-privacy" class="text-green-600 hover:text-green-800 transition-colors block py-1">13. Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <!-- Privacy Tools -->
+                        <div class="mt-6 bg-gradient-to-br from-green-500 to-blue-600 rounded-2xl p-6 text-white">
+                            <h4 class="font-bold text-lg mb-3">🛠️ Privacy Tools</h4>
+                            <div class="space-y-3">
+                                <button onclick="requestData()" class="block w-full bg-white bg-opacity-20 hover:bg-opacity-30 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-all">
+                                    📥 Download My Data
+                                </button>
+                                <button onclick="deleteData()" class="block w-full bg-white bg-opacity-20 hover:bg-opacity-30 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-all">
+                                    🗑️ Delete My Data
+                                </button>
+                                <a href="contact.html" class="block w-full bg-white bg-opacity-20 hover:bg-opacity-30 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-all text-center">
+                                    📞 Contact Privacy Team
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Privacy Policy Content -->
+                <div class="lg:col-span-3" id="privacy-content">
+                    <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                        
+                        <!-- Introduction -->
+                        <div class="mb-12 pb-8 border-b border-gray-200">
+                            <h2 class="text-3xl font-bold text-gray-800 mb-6">Privacy Policy</h2>
+                            <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg">
+                                <div class="flex items-start">
+                                    <div class="text-2xl mr-4">🔒</div>
+                                    <div>
+                                        <h3 class="font-bold text-green-800 mb-2">Our Commitment to Your Privacy</h3>
+                                        <p class="text-green-700">
+                                            At Template Bundle, your privacy is not just a priority—it's a fundamental right. This policy explains how we collect, use, protect, and respect your personal information.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 1. Privacy Overview -->
+                        <section id="overview" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-green-100 text-green-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                                Privacy Overview
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <p class="mb-6">
+                                    Template Bundle ("we," "us," or "our") operates templatebundle.com and provides digital productivity templates. This Privacy Policy describes how we handle your personal information when you use our services.
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-green-800 mb-3">🌟 What We Promise:</h4>
+                                        <ul class="text-green-700 text-sm space-y-2">
+                                            <li>✅ Transparent data practices</li>
+                                            <li>✅ Minimal data collection</li>
+                                            <li>✅ Strong security measures</li>
+                                            <li>✅ Respect for your rights</li>
+                                            <li>✅ No selling to third parties</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-3">📍 Key Information:</h4>
+                                        <ul class="text-blue-700 text-sm space-y-2">
+                                            <li><strong>Data Controller:</strong> Template Bundle LLC</li>
+                                            <li><strong>Contact:</strong> privacy@templatebundle.com</li>
+                                            <li><strong>Location:</strong> United States</li>
+                                            <li><strong>Last Updated:</strong> September 15, 2025</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 2. Information We Collect -->
+                        <section id="information-collect" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                                Information We Collect
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <p class="mb-6">
+                                    We collect only the information necessary to provide our services effectively and securely.
+                                </p>
+                                
+                                <!-- Personal Information -->
+                                <div class="mb-8">
+                                    <h4 class="font-bold text-gray-800 mb-4">👤 Personal Information You Provide:</h4>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div class="bg-gray-50 rounded-lg p-4">
+                                            <h5 class="font-semibold text-gray-800 mb-2">Account Information</h5>
+                                            <ul class="text-sm text-gray-600 space-y-1">
+                                                <li>• Full name</li>
+                                                <li>• Email address</li>
+                                                <li>• Password (encrypted)</li>
+                                                <li>• Profile preferences</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="bg-gray-50 rounded-lg p-4">
+                                            <h5 class="font-semibold text-gray-800 mb-2">Payment Information</h5>
+                                            <ul class="text-sm text-gray-600 space-y-1">
+                                                <li>• Billing address</li>
+                                                <li>• Payment method details</li>
+                                                <li>• Transaction history</li>
+                                                <li>• Invoicing information</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="bg-gray-50 rounded-lg p-4">
+                                            <h5 class="font-semibold text-gray-800 mb-2">Communication Data</h5>
+                                            <ul class="text-sm text-gray-600 space-y-1">
+                                                <li>• Support messages</li>
+                                                <li>• Feedback and reviews</li>
+                                                <li>• Survey responses</li>
+                                                <li>• Marketing preferences</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="bg-gray-50 rounded-lg p-4">
+                                            <h5 class="font-semibold text-gray-800 mb-2">Optional Information</h5>
+                                            <ul class="text-sm text-gray-600 space-y-1">
+                                                <li>• Company name</li>
+                                                <li>• Job title</li>
+                                                <li>• Phone number</li>
+                                                <li>• Profile photo</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Automatic Information -->
+                                <div class="mb-6">
+                                    <h4 class="font-bold text-gray-800 mb-4">🤖 Information We Collect Automatically:</h4>
+                                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                            <div>
+                                                <h5 class="font-semibold text-yellow-800 mb-2">Technical Data</h5>
+                                                <ul class="text-sm text-yellow-700 space-y-1">
+                                                    <li>• IP address</li>
+                                                    <li>• Browser type</li>
+                                                    <li>• Device information</li>
+                                                    <li>• Operating system</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-yellow-800 mb-2">Usage Data</h5>
+                                                <ul class="text-sm text-yellow-700 space-y-1">
+                                                    <li>• Pages visited</li>
+                                                    <li>• Time spent on site</li>
+                                                    <li>• Click patterns</li>
+                                                    <li>• Download activity</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-yellow-800 mb-2">Location Data</h5>
+                                                <ul class="text-sm text-yellow-700 space-y-1">
+                                                    <li>• General location (city/country)</li>
+                                                    <li>• Time zone</li>
+                                                    <li>• Language preferences</li>
+                                                    <li>• Regional settings</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 3. How We Use Your Data -->
+                        <section id="how-we-use" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-purple-100 text-purple-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                                How We Use Your Data
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <p class="mb-6">
+                                    We use your information for legitimate business purposes that benefit both you and our service.
+                                </p>
+                                
+                                <div class="space-y-6">
+                                    <!-- Primary Uses -->
+                                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-purple-800 mb-4">🎯 Primary Service Purposes:</h4>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            <div>
+                                                <h5 class="font-semibold text-purple-700 mb-2">Service Delivery</h5>
+                                                <ul class="text-sm text-purple-600 space-y-1">
+                                                    <li>• Processing payments and orders</li>
+                                                    <li>• Delivering digital templates</li>
+                                                    <li>• Managing your account</li>
+                                                    <li>• Providing customer support</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-purple-700 mb-2">Security & Legal</h5>
+                                                <ul class="text-sm text-purple-600 space-y-1">
+                                                    <li>• Preventing fraud and abuse</li>
+                                                    <li>• Ensuring platform security</li>
+                                                    <li>• Complying with legal obligations</li>
+                                                    <li>• Resolving disputes</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Secondary Uses -->
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-4">📈 Service Improvement (With Your Consent):</h4>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700 mb-2">Analytics & Optimization</h5>
+                                                <ul class="text-sm text-blue-600 space-y-1">
+                                                    <li>• Understanding user preferences</li>
+                                                    <li>• Improving template designs</li>
+                                                    <li>• Optimizing website performance</li>
+                                                    <li>• Creating better user experiences</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700 mb-2">Communication (Optional)</h5>
+                                                <ul class="text-sm text-blue-600 space-y-1">
+                                                    <li>• Sending product updates</li>
+                                                    <li>• Sharing new template releases</li>
+                                                    <li>• Providing helpful tips</li>
+                                                    <li>• Offering special promotions</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-6">
+                                    <h4 class="font-bold text-green-800 mb-3">✅ Legal Basis for Processing:</h4>
+                                    <p class="text-green-700 text-sm mb-3">
+                                        We process your data based on:
+                                    </p>
+                                    <ul class="text-green-600 text-sm space-y-1">
+                                        <li>• <strong>Contract:</strong> To provide services you've purchased</li>
+                                        <li>• <strong>Consent:</strong> When you opt-in for marketing communications</li>
+                                        <li>• <strong>Legitimate Interest:</strong> For security, analytics, and service improvement</li>
+                                        <li>• <strong>Legal Obligation:</strong> To comply with applicable laws</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 4. Information Sharing -->
+                        <section id="sharing" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-red-100 text-red-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">4</span>
+                                Information Sharing & Disclosure
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <div class="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
+                                    <h4 class="font-bold text-red-800 mb-3">🚫 What We DON'T Do:</h4>
+                                    <p class="text-red-700 text-lg font-semibold mb-2">
+                                        We NEVER sell, rent, or trade your personal information to third parties for their marketing purposes.
+                                    </p>
+                                </div>
+                                
+                                <h4 class="font-bold text-gray-800 mb-4">When We May Share Information:</h4>
+                                
+                                <div class="space-y-6">
+                                    <!-- Necessary Sharing -->
+                                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+                                        <h5 class="font-bold text-gray-800 mb-3">🔧 Service Providers (Necessary for Operations):</h5>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            <div>
+                                                <h6 class="font-semibold text-gray-700 mb-2">Payment Processing</h6>
+                                                <ul class="text-sm text-gray-600 space-y-1">
+                                                    <li>• Stripe (payment processing)</li>
+                                                    <li>• PayPal (payment processing)</li>
+                                                    <li>• Tax calculation services</li>
+                                                    <li>• Fraud prevention services</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div>
+                                                <h6 class="font-semibold text-gray-700 mb-2">Service Delivery</h6>
+                                                <ul class="text-sm text-gray-600 space-y-1">
+                                                    <li>• Email service providers</li>
+                                                    <li>• Cloud storage services</li>
+                                                    <li>• Analytics platforms</li>
+                                                    <li>• Customer support tools</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mt-4">
+                                            All service providers are contractually bound to protect your information and use it only for specified purposes.
+                                        </p>
+                                    </div>
+
+                                    <!-- Legal Requirements -->
+                                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                                        <h5 class="font-bold text-yellow-800 mb-3">⚖️ Legal Requirements:</h5>
+                                        <p class="text-yellow-700 text-sm mb-3">
+                                            We may disclose information when legally required or to protect rights:
+                                        </p>
+                                        <ul class="text-yellow-600 text-sm space-y-1">
+                                            <li>• In response to valid legal process (subpoenas, court orders)</li>
+                                            <li>• To comply with applicable laws and regulations</li>
+                                            <li>• To protect our rights, property, or safety</li>
+                                            <li>• To protect users from harm or illegal activities</li>
+                                            <li>• In connection with business transactions (mergers, acquisitions)</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- With Consent -->
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                                        <h5 class="font-bold text-green-800 mb-3">✅ With Your Explicit Consent:</h5>
+                                        <p class="text-green-700 text-sm">
+                                            We may share information in other circumstances only with your explicit consent, such as:
+                                        </p>
+                                        <ul class="text-green-600 text-sm space-y-1 mt-2">
+                                            <li>• Featuring your work in our marketing (with permission)</li>
+                                            <li>• Participating in partner programs you've opted into</li>
+                                            <li>• Sharing testimonials or case studies (anonymized or with consent)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 5. Cookies & Tracking -->
+                        <section id="cookies" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-orange-100 text-orange-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">5</span>
+                                Cookies & Tracking Technologies
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <p class="mb-6">
+                                    We use cookies and similar technologies to enhance your experience and understand how our service is used.
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                    <div class="bg-orange-50 border border-orange-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-orange-800 mb-3">🍪 Types of Cookies We Use:</h4>
+                                        <div class="space-y-3">
+                                            <div>
+                                                <h5 class="font-semibold text-orange-700 text-sm">Essential Cookies (Required)</h5>
+                                                <p class="text-orange-600 text-xs">Authentication, security, basic functionality</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-orange-700 text-sm">Performance Cookies (Optional)</h5>
+                                                <p class="text-orange-600 text-xs">Analytics, error tracking, performance monitoring</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-orange-700 text-sm">Functional Cookies (Optional)</h5>
+                                                <p class="text-orange-600 text-xs">Preferences, language, personalization</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-orange-700 text-sm">Marketing Cookies (Optional)</h5>
+                                                <p class="text-orange-600 text-xs">Targeted advertising, social media integration</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-3">🎛️ Your Cookie Controls:</h4>
+                                        <ul class="text-blue-700 text-sm space-y-2">
+                                            <li>• <strong>Browser Settings:</strong> Control cookies through your browser</li>
+                                            <li>• <strong>Opt-Out Links:</strong> Direct opt-out from analytics providers</li>
+                                            <li>• <strong>Cookie Banner:</strong> Manage preferences on first visit</li>
+                                            <li>• <strong>Account Settings:</strong> Adjust marketing preferences</li>
+                                        </ul>
+                                        
+                                        <div class="mt-4">
+                                            <button onclick="manageCookies()" class="bg-blue-600 text-white text-xs font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-all">
+                                                🍪 Manage Cookie Preferences
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+                                    <h4 class="font-bold text-gray-800 mb-3">🔍 Third-Party Analytics:</h4>
+                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                        <div>
+                                            <h5 class="font-semibold text-gray-700 text-sm mb-1">Google Analytics</h5>
+                                            <p class="text-gray-600 text-xs mb-2">Website traffic and user behavior analysis</p>
+                                            <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" class="text-blue-600 text-xs hover:underline">Opt-out →</a>
+                                        </div>
+                                        
+                                        <div>
+                                            <h5 class="font-semibold text-gray-700 text-sm mb-1">Hotjar</h5>
+                                            <p class="text-gray-600 text-xs mb-2">User experience and heatmap analysis</p>
+                                            <a href="https://www.hotjar.com/legal/compliance/opt-out" target="_blank" class="text-blue-600 text-xs hover:underline">Opt-out →</a>
+                                        </div>
+                                        
+                                        <div>
+                                            <h5 class="font-semibold text-gray-700 text-sm mb-1">Facebook Pixel</h5>
+                                            <p class="text-gray-600 text-xs mb-2">Advertising effectiveness measurement</p>
+                                            <a href="https://www.facebook.com/settings?tab=ads" target="_blank" class="text-blue-600 text-xs hover:underline">Manage →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 6. Data Security -->
+                        <section id="data-security" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-green-100 text-green-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">6</span>
+                                Data Security & Protection
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <div class="bg-green-50 border border-green-200 rounded-lg p-6 mb-6">
+                                    <h4 class="font-bold text-green-800 mb-3">🛡️ Our Security Commitment:</h4>
+                                    <p class="text-green-700">
+                                        We implement industry-leading security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction.
+                                    </p>
+                                </div>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-3">🔐 Technical Safeguards:</h4>
+                                        <ul class="text-blue-700 text-sm space-y-2">
+                                            <li>• <strong>SSL/TLS Encryption:</strong> All data transmissions encrypted</li>
+                                            <li>• <strong>Data Encryption:</strong> Sensitive data encrypted at rest</li>
+                                            <li>• <strong>Secure Servers:</strong> Protected server infrastructure</li>
+                                            <li>• <strong>Regular Updates:</strong> Security patches and updates</li>
+                                            <li>• <strong>Access Controls:</strong> Limited employee access</li>
+                                            <li>• <strong>Monitoring:</strong> 24/7 security monitoring</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-purple-800 mb-3">🏢 Organizational Measures:</h4>
+                                        <ul class="text-purple-700 text-sm space-y-2">
+                                            <li>• <strong>Privacy Training:</strong> Regular staff training</li>
+                                            <li>• <strong>Access Logs:</strong> All access monitored and logged</li>
+                                            <li>• <strong>Background Checks:</strong> Vetted personnel only</li>
+                                            <li>• <strong>Incident Response:</strong> Rapid breach response plan</li>
+                                            <li>• <strong>Regular Audits:</strong> Internal and external audits</li>
+                                            <li>• <strong>Data Minimization:</strong> Collect only necessary data</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mt-6">
+                                    <h4 class="font-bold text-yellow-800 mb-3">⚠️ Your Security Responsibilities:</h4>
+                                    <ul class="text-yellow-700 text-sm space-y-1">
+                                        <li>• Use strong, unique passwords for your account</li>
+                                        <li>• Enable two-factor authentication when available</li>
+                                        <li>• Keep your browser and software updated</li>
+                                        <li>• Never share your login credentials</li>
+                                        <li>• Report suspicious activities immediately</li>
+                                        <li>• Log out from shared or public computers</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-red-50 border border-red-200 rounded-lg p-6 mt-6">
+                                    <h4 class="font-bold text-red-800 mb-3">🚨 Data Breach Notification:</h4>
+                                    <p class="text-red-700 text-sm">
+                                        In the unlikely event of a data breach that may affect your personal information, we will:
+                                    </p>
+                                    <ul class="text-red-600 text-sm space-y-1 mt-2">
+                                        <li>• Notify you within 72 hours of discovery</li>
+                                        <li>• Provide clear information about what happened</li>
+                                        <li>• Explain what data may have been affected</li>
+                                        <li>• Outline steps we're taking to address the breach</li>
+                                        <li>• Provide recommendations for protecting yourself</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 7. Your Privacy Rights -->
+                        <section id="your-rights" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-indigo-100 text-indigo-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">7</span>
+                                Your Privacy Rights
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-6 mb-6">
+                                    <h4 class="font-bold text-indigo-800 mb-3">✊ Your Rights Under GDPR & Other Privacy Laws:</h4>
+                                    <p class="text-indigo-700 text-sm">
+                                        You have significant rights regarding your personal data. We make it easy to exercise these rights.
+                                    </p>
+                                </div>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <!-- Access & Portability -->
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-3">📥 Access & Portability Rights:</h4>
+                                        <div class="space-y-3">
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700 text-sm">Right to Access</h5>
+                                                <p class="text-blue-600 text-xs">Request a copy of all personal data we hold about you</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700 text-sm">Data Portability</h5>
+                                                <p class="text-blue-600 text-xs">Receive your data in a machine-readable format</p>
+                                            </div>
+                                            <button onclick="requestData()" class="bg-blue-600 text-white text-xs font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-all">
+                                                📥 Request My Data
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Correction & Deletion -->
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-green-800 mb-3">✏️ Correction & Deletion Rights:</h4>
+                                        <div class="space-y-3">
+                                            <div>
+                                                <h5 class="font-semibold text-green-700 text-sm">Right to Rectification</h5>
+                                                <p class="text-green-600 text-xs">Correct or update inaccurate personal information</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-green-700 text-sm">Right to Erasure</h5>
+                                                <p class="text-green-600 text-xs">Request deletion of your personal data ("Right to be Forgotten")</p>
+                                            </div>
+                                            <button onclick="deleteData()" class="bg-red-500 text-white text-xs font-semibold py-2 px-4 rounded-lg hover:bg-red-600 transition-all">
+                                                🗑️ Delete My Data
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Control Rights -->
+                                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-purple-800 mb-3">🎛️ Control Rights:</h4>
+                                        <div class="space-y-3">
+                                            <div>
+                                                <h5 class="font-semibold text-purple-700 text-sm">Right to Restrict</h5>
+                                                <p class="text-purple-600 text-xs">Limit how we process your personal data</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-purple-700 text-sm">Right to Object</h5>
+                                                <p class="text-purple-600 text-xs">Object to processing for direct marketing or legitimate interests</p>
+                                            </div>
+                                            <a href="contact.html" class="inline-block bg-purple-600 text-white text-xs font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition-all">
+                                                ⚙️ Manage Preferences
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Legal Rights -->
+                                    <div class="bg-orange-50 border border-orange-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-orange-800 mb-3">⚖️ Legal Rights:</h4>
+                                        <div class="space-y-3">
+                                            <div>
+                                                <h5 class="font-semibold text-orange-700 text-sm">Right to Complain</h5>
+                                                <p class="text-orange-600 text-xs">File a complaint with your local data protection authority</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-orange-700 text-sm">Right to Withdraw Consent</h5>
+                                                <p class="text-orange-600 text-xs">Withdraw consent for processing at any time</p>
+                                            </div>
+                                            <a href="contact.html" class="inline-block bg-orange-600 text-white text-xs font-semibold py-2 px-4 rounded-lg hover:bg-orange-700 transition-all">
+                                                📞 Contact Privacy Team
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-6">
+                                    <h4 class="font-bold text-gray-800 mb-3">⏱️ Response Times:</h4>
+                                    <p class="text-gray-700 text-sm mb-3">
+                                        We respond to privacy rights requests promptly:
+                                    </p>
+                                    <ul class="text-gray-600 text-sm space-y-1">
+                                        <li>• <strong>Standard Requests:</strong> Within 30 days (GDPR requirement)</li>
+                                        <li>• <strong>Complex Requests:</strong> Up to 60 days (with notification)</li>
+                                        <li>• <strong>Urgent Requests:</strong> Within 72 hours when possible</li>
+                                        <li>• <strong>Acknowledgment:</strong> Within 24 hours of receipt</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 8. Data Retention -->
+                        <section id="data-retention" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-teal-100 text-teal-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">8</span>
+                                Data Retention Periods
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <p class="mb-6">
+                                    We retain personal data only as long as necessary for legitimate business purposes or as required by law.
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="bg-teal-50 border border-teal-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-teal-800 mb-3">📅 Retention Periods:</h4>
+                                        <div class="space-y-3">
+                                            <div>
+                                                <h5 class="font-semibold text-teal-700 text-sm">Account Data</h5>
+                                                <p class="text-teal-600 text-xs">Until account deletion + 30 days</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-teal-700 text-sm">Transaction Records</h5>
+                                                <p class="text-teal-600 text-xs">7 years (tax and legal requirements)</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-teal-700 text-sm">Support Communications</h5>
+                                                <p class="text-teal-600 text-xs">3 years after resolution</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-teal-700 text-sm">Marketing Data</h5>
+                                                <p class="text-teal-600 text-xs">Until opt-out + 30 days</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-teal-700 text-sm">Analytics Data</h5>
+                                                <p class="text-teal-600 text-xs">26 months (anonymized)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-3">🔄 Deletion Process:</h4>
+                                        <div class="space-y-3">
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700 text-sm">Automatic Deletion</h5>
+                                                <p class="text-blue-600 text-xs">Data automatically removed when retention period expires</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700 text-sm">Secure Erasure</h5>
+                                                <p class="text-blue-600 text-xs">Data securely overwritten and cannot be recovered</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700 text-sm">Backup Removal</h5>
+                                                <p class="text-blue-600 text-xs">Data removed from all backup systems within 90 days</p>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700 text-sm">Third-Party Deletion</h5>
+                                                <p class="text-blue-600 text-xs">Ensure service providers also delete data</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mt-6">
+                                    <h4 class="font-bold text-yellow-800 mb-3">⚠️ Legal Hold Exceptions:</h4>
+                                    <p class="text-yellow-700 text-sm mb-3">
+                                        Data retention may be extended when required for:
+                                    </p>
+                                    <ul class="text-yellow-600 text-sm space-y-1">
+                                        <li>• Legal proceedings or investigations</li>
+                                        <li>• Regulatory compliance requirements</li>
+                                        <li>• Fraud prevention and security</li>
+                                        <li>• Debt collection or dispute resolution</li>
+                                    </ul>
+                                    <p class="text-yellow-700 text-xs mt-3">
+                                        We will notify you if your data retention is extended for legal reasons.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 9. International Transfers -->
+                        <section id="international" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">9</span>
+                                International Data Transfers
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <p class="mb-6">
+                                    Our services are primarily operated from the United States. Your data may be processed in countries outside your residence.
+                                </p>
+                                
+                                <div class="bg-pink-50 border border-pink-200 rounded-lg p-6 mb-6">
+                                    <h4 class="font-bold text-pink-800 mb-3">🌍 Transfer Safeguards:</h4>
+                                    <p class="text-pink-700 text-sm mb-3">
+                                        When we transfer data internationally, we ensure adequate protection through:
+                                    </p>
+                                    <ul class="text-pink-600 text-sm space-y-1">
+                                        <li>• <strong>Adequacy Decisions:</strong> Transfers to countries deemed adequate by regulators</li>
+                                        <li>• <strong>Standard Contractual Clauses:</strong> EU-approved data transfer contracts</li>
+                                        <li>• <strong>Certification Programs:</strong> Privacy Shield successors and similar frameworks</li>
+                                        <li>• <strong>Binding Corporate Rules:</strong> Internal privacy rules for multinational companies</li>
+                                        <li>• <strong>Your Consent:</strong> Explicit consent for specific transfers when required</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-3">🏢 Primary Locations:</h4>
+                                        <ul class="text-blue-700 text-sm space-y-2">
+                                            <li>• <strong>United States:</strong> Primary servers and operations</li>
+                                            <li>• <strong>European Union:</strong> EU customer data processing</li>
+                                            <li>• <strong>Canada:</strong> Backup and disaster recovery</li>
+                                            <li>• <strong>Australia:</strong> Regional support services</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-green-800 mb-3">🔒 Transfer Protections:</h4>
+                                        <ul class="text-green-700 text-sm space-y-2">
+                                            <li>• End-to-end encryption during transfer</li>
+                                            <li>• Contractual data protection obligations</li>
+                                            <li>• Regular compliance audits</li>
+                                            <li>• Local data residency options (enterprise)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 10. Children's Privacy -->
+                        <section id="children" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-yellow-100 text-yellow-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">10</span>
+                                Children's Privacy (COPPA Compliance)
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-6">
+                                    <h4 class="font-bold text-yellow-800 mb-3">👶 Age Restrictions:</h4>
+                                    <p class="text-yellow-700 font-semibold mb-3">
+                                        Our services are not intended for children under 13 years of age (16 in EU).
+                                    </p>
+                                    <p class="text-yellow-600 text-sm">
+                                        We do not knowingly collect, use, or share personal information from children under these age limits without verifiable parental consent.
+                                    </p>
+                                </div>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-red-800 mb-3">🚫 If We Discover Child Data:</h4>
+                                        <ul class="text-red-700 text-sm space-y-2">
+                                            <li>• Immediately suspend the account</li>
+                                            <li>• Delete all collected personal information</li>
+                                            <li>• Contact parents/guardians if possible</li>
+                                            <li>• Prevent future data collection</li>
+                                            <li>• Report to authorities if required</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-3">👨‍👩‍👧‍👦 For Parents:</h4>
+                                        <ul class="text-blue-700 text-sm space-y-2">
+                                            <li>• Monitor your child's online activities</li>
+                                            <li>• Contact us if you discover unauthorized use</li>
+                                            <li>• Request deletion of child's data</li>
+                                            <li>• Use parental control software</li>
+                                            <li>• Educate about online privacy</li>
+                                        </ul>
+                                        
+                                        <div class="mt-4">
+                                            <a href="contact.html" class="inline-block bg-blue-600 text-white text-xs font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-all">
+                                                👨‍👩‍👧‍👦 Report Child Account
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-green-50 border border-green-200 rounded-lg p-6 mt-6">
+                                    <h4 class="font-bold text-green-800 mb-3">📚 Educational Use:</h4>
+                                    <p class="text-green-700 text-sm mb-3">
+                                        For educational institutions using our templates in classrooms:
+                                    </p>
+                                    <ul class="text-green-600 text-sm space-y-1">
+                                        <li>• Teachers must have appropriate permissions and supervision</li>
+                                        <li>• No personal data should be collected from students</li>
+                                        <li>• Institutional accounts should be used, not individual student accounts</li>
+                                        <li>• Contact us for educational licensing options</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 11. California Privacy Rights -->
+                        <section id="california" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-indigo-100 text-indigo-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">11</span>
+                                California Privacy Rights (CCPA/CPRA)
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-6 mb-6">
+                                    <h4 class="font-bold text-indigo-800 mb-3">🌟 California Consumer Rights:</h4>
+                                    <p class="text-indigo-700 text-sm">
+                                        If you're a California resident, you have additional rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA).
+                                    </p>
+                                </div>
+                                
+                                <div class="space-y-6">
+                                    <!-- CCPA Rights -->
+                                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-purple-800 mb-4">🏛️ Your CCPA Rights:</h4>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            <div>
+                                                <h5 class="font-semibold text-purple-700 text-sm mb-2">Right to Know</h5>
+                                                <ul class="text-purple-600 text-xs space-y-1">
+                                                    <li>• Categories of personal information collected</li>
+                                                    <li>• Sources of personal information</li>
+                                                    <li>• Business purposes for collection</li>
+                                                    <li>• Categories of third parties we share with</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-purple-700 text-sm mb-2">Right to Delete</h5>
+                                                <ul class="text-purple-600 text-xs space-y-1">
+                                                    <li>• Request deletion of personal information</li>
+                                                    <li>• Some exceptions may apply (legal obligations)</li>
+                                                    <li>• We'll notify third parties to delete too</li>
+                                                    <li>• Confirmation of deletion provided</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-purple-700 text-sm mb-2">Right to Opt-Out</h5>
+                                                <ul class="text-purple-600 text-xs space-y-1">
+                                                    <li>• Opt-out of "sale" of personal information</li>
+                                                    <li>• Opt-out of targeted advertising</li>
+                                                    <li>• Limit use of sensitive personal information</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-purple-700 text-sm mb-2">Right to Non-Discrimination</h5>
+                                                <ul class="text-purple-600 text-xs space-y-1">
+                                                    <li>• No denial of service for exercising rights</li>
+                                                    <li>• No different prices or service levels</li>
+                                                    <li>• No retaliation for requests</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Data Categories -->
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-4">📊 Personal Information Categories We Collect:</h4>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700 mb-2">Categories A-F:</h5>
+                                                <ul class="text-blue-600 text-xs space-y-1">
+                                                    <li>• <strong>A:</strong> Identifiers (name, email, IP address)</li>
+                                                    <li>• <strong>B:</strong> Personal records (payment info)</li>
+                                                    <li>• <strong>C:</strong> Protected classifications (age, if provided)</li>
+                                                    <li>• <strong>D:</strong> Commercial information (purchase history)</li>
+                                                    <li>• <strong>E:</strong> Biometric information (not collected)</li>
+                                                    <li>• <strong>F:</strong> Internet activity (browsing, usage)</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700 mb-2">Categories G-K:</h5>
+                                                <ul class="text-blue-600 text-xs space-y-1">
+                                                    <li>• <strong>G:</strong> Geolocation data (general location)</li>
+                                                    <li>• <strong>H:</strong> Sensory data (not collected)</li>
+                                                    <li>• <strong>I:</strong> Professional info (if provided)</li>
+                                                    <li>• <strong>J:</strong> Education info (not collected)</li>
+                                                    <li>• <strong>K:</strong> Inferences (preferences, analytics)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Exercise Rights -->
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-green-800 mb-4">📝 How to Exercise Your Rights:</h4>
+                                        <div class="space-y-4">
+                                            <div class="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0">
+                                                <button onclick="ccpaRequest('know')" class="bg-green-600 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition-all flex-1">
+                                                    📋 Request to Know
+                                                </button>
+                                                <button onclick="ccpaRequest('delete')" class="bg-red-500 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:bg-red-600 transition-all flex-1">
+                                                    🗑️ Request Deletion
+                                                </button>
+                                                <button onclick="ccpaOptOut()" class="bg-yellow-500 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:bg-yellow-600 transition-all flex-1">
+                                                    🚫 Opt-Out of Sale
+                                                </button>
+                                            </div>
+                                            
+                                            <div class="text-center">
+                                                <a href="contact.html" class="inline-block bg-blue-600 text-white text-sm font-semibold py-2 px-6 rounded-lg hover:bg-blue-700 transition-all">
+                                                    📞 Contact California Privacy Team
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-6">
+                                    <h4 class="font-bold text-gray-800 mb-3">🔍 Do Not Sell My Personal Information:</h4>
+                                    <p class="text-gray-700 text-sm mb-3">
+                                        <strong>Important:</strong> We do not "sell" personal information as traditionally understood. However, some data sharing for advertising purposes may be considered a "sale" under CCPA.
+                                    </p>
+                                    <div class="flex items-center space-x-4">
+                                        <button onclick="ccpaOptOut()" class="bg-red-500 text-white text-sm font-bold py-2 px-6 rounded-lg hover:bg-red-600 transition-all">
+                                            🛑 Do Not Sell My Personal Information
+                                        </button>
+                                        <span class="text-green-600 text-sm font-semibold">✅ Currently Opted Out</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 12. Policy Updates -->
+                        <section id="updates" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-green-100 text-green-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">12</span>
+                                Privacy Policy Updates
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <p class="mb-6">
+                                    We may update this Privacy Policy periodically to reflect changes in our practices, technology, legal requirements, or for other operational reasons.
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-green-800 mb-3">📢 How We Notify You:</h4>
+                                        <ul class="text-green-700 text-sm space-y-2">
+                                            <li>• <strong>Email Notification:</strong> Significant changes sent to your email</li>
+                                            <li>• <strong>Website Banner:</strong> Prominent notice on our website</li>
+                                            <li>• <strong>Account Dashboard:</strong> Notification in your user account</li>
+                                            <li>• <strong>Version Dating:</strong> "Last Updated" date at the top of policy</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-3">⏰ Notice Periods:</h4>
+                                        <ul class="text-blue-700 text-sm space-y-2">
+                                            <li>• <strong>Material Changes:</strong> 30 days advance notice</li>
+                                            <li>• <strong>Minor Updates:</strong> Notice upon next visit</li>
+                                            <li>• <strong>Legal Requirements:</strong> Immediate if legally required</li>
+                                            <li>• <strong>Emergency Changes:</strong> As soon as reasonably possible</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mt-6">
+                                    <h4 class="font-bold text-yellow-800 mb-3">📋 Your Options When We Update:</h4>
+                                    <ul class="text-yellow-700 text-sm space-y-2 mb-4">
+                                        <li>• <strong>Continue Using:</strong> Continued use means acceptance of new terms</li>
+                                        <li>• <strong>Request Clarification:</strong> Contact us with questions about changes</li>
+                                        <li>• <strong>Exercise Rights:</strong> Use data deletion or other rights if you disagree</li>
+                                        <li>• <strong>Stop Using Service:</strong> Discontinue use if you don't accept changes</li>
+                                    </ul>
+                                    
+                                    <div class="bg-white rounded-lg p-4">
+                                        <h5 class="font-semibold text-yellow-800 mb-2">📅 Recent Updates:</h5>
+                                        <ul class="text-yellow-600 text-xs space-y-1">
+                                            <li>• <strong>September 15, 2025:</strong> Initial privacy policy version</li>
+                                            <li>• <strong>Future updates will be listed here</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 13. Contact Information -->
+                        <section id="contact-privacy" class="mb-12">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold mr-3">13</span>
+                                Privacy Contact Information
+                            </h3>
+                            <div class="prose prose-gray max-w-none">
+                                <p class="mb-6">
+                                    We're committed to addressing your privacy concerns promptly and transparently.
+                                </p>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-blue-800 mb-4">📧 Privacy Team Contact:</h4>
+                                        <div class="space-y-3 text-sm">
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700">Email (Primary)</h5>
+                                                <p class="text-blue-600">privacy@templatebundle.com</p>
+                                                <p class="text-blue-500 text-xs">Response within 24 hours</p>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700">Phone (Urgent)</h5>
+                                                <p class="text-blue-600">+1 (555) 123-4567</p>
+                                                <p class="text-blue-500 text-xs">Available 9 AM - 6 PM EST</p>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-blue-700">Live Chat</h5>
+                                                <p class="text-blue-600">Available on our website</p>
+                                                <p class="text-blue-500 text-xs">Instant privacy support</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                                        <h4 class="font-bold text-green-800 mb-4">🏢 Business Information:</h4>
+                                        <div class="space-y-3 text-sm">
+                                            <div>
+                                                <h5 class="font-semibold text-green-700">Company Name</h5>
+                                                <p class="text-green-600">Template Bundle LLC</p>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-green-700">Mailing Address</h5>
+                                                <p class="text-green-600 text-xs">
+                                                    123 Privacy Street<br>
+                                                    Suite 456<br>
+                                                    San Francisco, CA 94102<br>
+                                                    United States
+                                                </p>
+                                            </div>
+                                            
+                                            <div>
+                                                <h5 class="font-semibold text-green-700">Data Protection Officer</h5>
+                                                <p class="text-green-600">dpo@templatebundle.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-purple-50 border border-purple-200 rounded-lg p-6 mt-6">
+                                    <h4 class="font-bold text-purple-800 mb-4">🌍 Regional Privacy Contacts:</h4>
+                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                                        <div>
+                                            <h5 class="font-semibold text-purple-700 mb-1">European Union</h5>
+                                            <p class="text-purple-600 text-xs">eu-privacy@templatebundle.com</p>
+                                            <p class="text-purple-500 text-xs">GDPR specialist team</p>
+                                        </div>
+                                        
+                                        <div>
+                                            <h5 class="font-semibold text-purple-700 mb-1">California/US</h5>
+                                            <p class="text-purple-600 text-xs">ccpa@templatebundle.com</p>
+                                            <p class="text-purple-500 text-xs">CCPA/CPRA specialist</p>
+                                        </div>
+                                        
+                                        <div>
+                                            <h5 class="font-semibold text-purple-700 mb-1">Other Regions</h5>
+                                            <p class="text-purple-600 text-xs">global-privacy@templatebundle.com</p>
+                                            <p class="text-purple-500 text-xs">International privacy team</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Quick Action Buttons -->
+                                <div class="text-center mt-8">
+                                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                                        <a href="contact.html" class="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
+                                            <span class="mr-2">📞</span>
+                                            Contact Privacy Team
+                                        </a>
+                                        
+                                        <button onclick="requestData()" class="inline-flex items-center bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
+                                            <span class="mr-2">📥</span>
+                                            Download My Data
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Agreement Confirmation -->
+                        <div class="border-t border-gray-200 pt-8 mt-12 text-center">
+                            <div class="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-2xl p-8">
+                                <div class="text-4xl mb-4">🔒</div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                                    Your Privacy is Protected
+                                </h3>
+                                <p class="text-gray-600 mb-6">
+                                    By using our service, you acknowledge that you have read and understand this Privacy Policy. We're committed to protecting your personal information and respecting your privacy rights.
+                                </p>
+                                <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:items-center md:justify-center">
+                                    <a href="index.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
+                                        Get Templates Safely - $10
+                                    </a>
+                                    <a href="terms.html" class="inline-block bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-full transition-all">
+                                        Read Terms & Conditions
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Template Bundle</h3>
+                    <p class="text-gray-400">Privacy-first productivity templates to transform your life and work.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Privacy</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Cookie Settings</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Data Requests</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">California Privacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Refund Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">License Agreement</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white transition-colors">General Support</a></li>
+                        <li><a href="mailto:privacy@templatebundle.com" class="hover:text-white transition-colors">Privacy Team</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Security Issues</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Press Inquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Template Bundle LLC. All rights reserved. | Last Updated: September 15, 2025</p>
+                <p class="mt-2 text-sm">🔒 Your privacy is protected by industry-leading security measures and transparent practices.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Privacy-related JavaScript functions
+        
+        // Scroll to content
+        function scrollToContent() {
+            document.getElementById('privacy-content').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Highlight active section in table of contents
+        function updateActiveSection() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.toc-scroll a');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('font-bold', 'text-green-800');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('font-bold', 'text-green-800');
+                }
+            });
+        }
+
+        // Privacy action functions
+        function requestData() {
+            alert('Data request form would open here. In a real implementation, this would redirect to a secure form or contact page.');
+        }
+
+        function deleteData() {
+            if (confirm('Are you sure you want to request deletion of all your personal data? This action cannot be undone.')) {
+                alert('Data deletion request submitted. You will receive an email confirmation within 24 hours.');
+            }
+        }
+
+        function manageCookies() {
+            alert('Cookie preference center would open here. Users could manage their cookie preferences.');
+        }
+
+        function ccpaRequest(type) {
+            const messages = {
+                'know': 'CCPA "Right to Know" request form would open here.',
+                'delete': 'CCPA deletion request form would open here.'
+            };
+            alert(messages[type] || 'CCPA request form would open here.');
+        }
+
+        function ccpaOptOut() {
+            alert('You have been opted out of data sales and targeted advertising. Confirmation email will be sent.');
+        }
+
+        // Event listeners
+        window.addEventListener('scroll', updateActiveSection);
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateActiveSection();
+        });
+
+        // Mobile menu functionality
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            alert('Mobile menu would toggle here!');
+        });
+    </script>
+</body>
+</html>
