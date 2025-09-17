@@ -901,12 +901,69 @@ document.addEventListener('DOMContentLoaded', function() {
   </button>
 </form>
 
-            </div>
+            </div><br><br><a href="try.html" class="try-free-btn">
+            🎁 Try Some Tempalte for Free
+        </a>
         </div>
+          
+        
+  
     </div>
 </section>
 
 
+       
+      
+<style>
+    /* Try Free Button - Super Attractive */
+.try-free-btn {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 25px rgba(34, 197, 94, 0.8);
+    animation: pulseGlow 2s infinite;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.try-free-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    box-shadow: 0 0 35px rgba(34, 197, 94, 1);
+    border-color: #fde047;
+}
+
+.try-free-btn::before {
+    content: '✨';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 16px;
+    animation: sparkle 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.7); }
+    50% { box-shadow: 0 0 30px rgba(34, 197, 94, 1); }
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 1; transform: rotate(0deg); }
+    50% { opacity: 0.5; transform: rotate(180deg); }
+}
+
+</style>
 
 <!-- All Templates Showcase Section -->
 <section class="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
