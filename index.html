@@ -2722,5 +2722,69 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     </script>
+    <!-- Place this in your landing page <head> or before </body> -->
+<script>
+  (function() {
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      // Optional: show a subtle console message for curious devs
+      console.log('Context menu disabled on this page.');
+      return false;
+    }, { passive: false });
+
+    // Block keys for view-source / devtools
+    document.addEventListener('keydown', function(e) {
+      // Normalize key
+      const k = (e.key || '').toLowerCase();
+
+      // Block F12
+      if (e.key === 'F12') {
+        e.preventDefault();
+        return false;
+      }
+
+      // Block Ctrl+U or Cmd+Option+U (view-source)
+      if ((e.ctrlKey && k === 'u') || (e.metaKey && e.altKey && k === 'u')) {
+        e.preventDefault();
+        return false;
+      }
+
+      // Block common DevTools shortcuts:
+      // Ctrl+Shift+I / Cmd+Option+I
+      if ((e.ctrlKey && e.shiftKey && k === 'i') || (e.metaKey && e.altKey && k === 'i')) {
+        e.preventDefault();
+        return false;
+      }
+
+      // Ctrl+Shift+J / Cmd+Option+J (Console)
+      if ((e.ctrlKey && e.shiftKey && k === 'j') || (e.metaKey && e.altKey && k === 'j')) {
+        e.preventDefault();
+        return false;
+      }
+
+      // Ctrl+Shift+C / Cmd+Option+C (Inspect element)
+      if ((e.ctrlKey && e.shiftKey && k === 'c') || (e.metaKey && e.altKey && k === 'c')) {
+        e.preventDefault();
+        return false;
+      }
+
+      // Some browsers open devtools on Ctrl+Shift+K (Firefox)
+      if (e.ctrlKey && e.shiftKey && k === 'k') {
+        e.preventDefault();
+        return false;
+      }
+
+      // Optional: block Ctrl+S (save page) if you want
+      // if (e.ctrlKey && k === 's') { e.preventDefault(); return false; }
+    }, { passive: false, capture: true });
+
+    // Extra: prevent selecting & copying (optional, UX tradeoff)
+    // document.addEventListener('selectstart', e => e.preventDefault());
+    // document.addEventListener('copy', e => e.preventDefault());
+
+  })();
+</script>
+
 </body>
 </html>
