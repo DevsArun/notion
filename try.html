@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Free Templates - Premium Bundle</title>
+    <meta name="description" content="Download 6 free premium templates from our collection">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #10b981, #22c55e);
+            color: white;
+            font-weight: 700;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-bottom: 1rem;
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .download-btn:hover {
+            background: linear-gradient(135deg, #059669, #16a34a);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(16, 185, 129, 0.6);
+        }
+        
+        .download-btn:active {
+            transform: translateY(0px);
+        }
+        
+        .download-btn::before {
+            content: '⬇️';
+            margin-right: 10px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+        }
+        
+        .title {
+            font-size: 3rem;
+            font-weight: 900;
+            text-align: center;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .footer-text {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 1rem;
+        }
+        
+        .cta-btn {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+            font-weight: 700;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            
+            <!-- Header -->
+            <h1 class="title">🎁 Try Free Templates</h1>
+            <p class="subtitle">Download these 6 premium templates absolutely FREE!</p>
+            
+            <!-- Download Buttons -->
+            <div class="space-y-4">
+                
+                <a href="https://your-domain.com/downloads/networking-crm.zip" class="download-btn" target="_blank" rel="noopener">
+                    Networking CRM Template
+                </a>
+                
+                <a href="https://your-domain.com/downloads/inventory-tracker.zip" class="download-btn" target="_blank" rel="noopener">
+                    Inventory Tracker Template
+                </a>
+                
+                <a href="https://your-domain.com/downloads/pet-care-planner.zip" class="download-btn" target="_blank" rel="noopener">
+                    Pet Care Planner Template
+                </a>
+                
+                <a href="https://your-domain.com/downloads/focus-room.zip" class="download-btn" target="_blank" rel="noopener">
+                    Focus Room Template
+                </a>
+                
+                <a href="https://your-domain.com/downloads/student-schedule.zip" class="download-btn" target="_blank" rel="noopener">
+                    Student Schedule Template
+                </a>
+                
+                <a href="https://your-domain.com/downloads/wishlist-tracker.zip" class="download-btn" target="_blank" rel="noopener">
+                    Wishlist Tracker Template
+                </a>
+                
+            </div>
+            
+            <!-- Footer CTA -->
+            <div class="footer-text">
+                <p><strong>💡 Love these templates?</strong></p>
+                <p>Get ALL 55+ premium templates for just <strong style="color: #10b981;">$10</strong></p>
+                <a href="index.html" class="cta-btn">Buy Complete Bundle - $10 💰</a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script>
+        // Add click tracking for downloads
+        document.querySelectorAll('.download-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const templateName = this.textContent.trim();
+                console.log(`Download started: ${templateName}`);
+                
+                // Optional: Add analytics tracking here
+                // gtag('event', 'download', { 'template_name': templateName });
+            });
+        });
+    </script>
+    
+</body>
+</html>
